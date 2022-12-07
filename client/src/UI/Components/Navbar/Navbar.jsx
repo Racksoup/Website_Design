@@ -1,66 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.scss';
+import React from 'react';
+import './navbar.scss';
 
-import { Link } from 'react-router-dom';
-import { faCartShopping, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useDispatch, useSelector } from 'react-redux';
-
-const Navbar = () => {
-  const [searchActive, setSearchActive] = useState(false);
-  const dispatch = useDispatch();
-
-  useEffect(() => {}, []);
-
-  let TopMiddleStyle = {
-    border: 'none',
-  };
-
-  if (searchActive) {
-    TopMiddleStyle.border = 'solid rgb(185, 126, 67) 0.05rem';
-  }
-
+const NavBar = ({
+  headerRef,
+  servicesRef,
+  projectsRef,
+  testimonialsRef,
+  aboutRef,
+  blogsRef,
+  contactRef,
+  linkToRef,
+}) => {
   return (
-    <div className='Navbar'>
-      <div className='Top'>
-        <Link to='/' className='Link'>
-          <h1 className='TopLeft'></h1>
-        </Link>
-        <div className='TopMiddle' style={TopMiddleStyle}>
-          <button className='DropdownButton'>
-            All
-            <div className='DropdownBox'>
-              <div className='DropdownItem'>123</div>
-              <div className='DropdownItem'>abc</div>
-              <div className='DropdownItem'>xyz</div>
-            </div>
-          </button>
-          <input
-            type='text'
-            className='Search'
-            onClick={() => setSearchActive(true)}
-            onBlur={() => setSearchActive(false)}
-          />
-          <button className='SearchButton'>
-            <FontAwesomeIcon icon={faSearch} className='Icon' />
-          </button>
+    <div className='NavBar'>
+      <div className='Content'>
+        <div />
+        <div className='Name'>CONNOR RACK</div>
+        <div />
+        <div className='Links'>
+          <div className='RefLink' onClick={() => linkToRef(headerRef)}>
+            Home
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(servicesRef)}>
+            Services
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(projectsRef)}>
+            Portfolio
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(testimonialsRef)}>
+            Testimonials
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(aboutRef)}>
+            About
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(blogsRef)}>
+            Blogs
+          </div>
+          <div className='RefLink' onClick={() => linkToRef(contactRef)}>
+            Contact
+          </div>
         </div>
-        <div className='TopRight'>
-          <Link className='Link' to='/cart'>
-            <button className='Icon'>
-              <FontAwesomeIcon icon={faCartShopping} />
-            </button>
-          </Link>
-          <Link className='Link' to='/user-login'>
-            <button className='Icon'>
-              <FontAwesomeIcon icon={faUser} />
-            </button>
-          </Link>
-        </div>
+        <div />
       </div>
-      <div className='Bottom'></div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

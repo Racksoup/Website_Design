@@ -1,0 +1,42 @@
+@import '../../../App.scss';
+
+.Header-Spacing {
+  height: 100px;
+}
+
+.Header {
+  width: 100%;
+  height: 980px;
+  background-image: url('../../../images/HeaderBG.png');
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Content {
+    margin: 0 0 240px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .Text {
+      font-size: 2.8rem;
+    }
+
+    .Btn {
+      margin: 20px;
+      width: 210px;
+      height: 55px;
+      border: solid 5px rgb(51, 255, 0);
+      color: rgb(51, 255, 0);
+      background-color: rgba(51, 255, 0, 0.1);
+      border-radius: 0.5rem;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

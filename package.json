@@ -1,5 +1,5 @@
 {
-  "name": "MERNH App Starter",
+  "name": "website-design",
   "version": "1.0.0",
   "description": "Mongodb, Express, React, Node, Heroku App",
   "main": "server.js",
@@ -8,11 +8,13 @@
     "npm": "8.x"
   },
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "render-build": "npm install && npm run render-postbuild",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "Connor Rack",
