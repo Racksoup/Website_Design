@@ -108,15 +108,15 @@ const Projects = ({ Ref }) => {
   const View = () => {
     switch (view) {
       case 'All':
-        return <View0 data={data} />;
+        return <View0 data={data} key='View0' />;
       case 'Resturant':
-        return <View1 data={data} category='Resturant' />;
+        return <View1 data={data} category='Resturant' key='View1-Resturant' />;
       case 'Law':
-        return <View1 data={data} category='Law' />;
+        return <View1 data={data} category='Law' key='View1-Law' />;
       case 'Ecommerce':
-        return <View1 data={data} category='Ecommerce' />;
+        return <View1 data={data} category='Ecommerce' key='View1-Ecommerce' />;
       case 'Beauty & Salon':
-        return <View1 data={data} category='Beauty & Salon' />;
+        return <View1 data={data} category='Beauty & Salon' key='View1-Beauty&Salon' />;
     }
   };
 
@@ -150,9 +150,9 @@ const Projects = ({ Ref }) => {
 const View0 = ({ data }) => {
   return (
     <div className='Websites'>
-      {data.map((item) => {
+      {data.map((item, i) => {
         return (
-          <a className='Website' href={item.link} target='_blank' rel='noopener'>
+          <a className='Website' href={item.link} target='_blank' rel='noopener' key={i}>
             <img className='Img' src={item.img} />
             <div className='Label'>{item.label}</div>
           </a>

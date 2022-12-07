@@ -1,17 +1,20 @@
-import store from './store';
-import Base from './Base.jsx';
+import React from 'react';
+import './App.scss';
+import Home from './UI/Pages/Home.jsx';
 
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <Router>
-        <Base />
-      </Router>
-    </Provider>
+    <div className='App-Main'>
+      <div className='App-Background' />
+      <div className='App-Content'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+        </Routes>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
