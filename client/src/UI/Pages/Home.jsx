@@ -40,7 +40,7 @@ const Home = () => {
 
   return (
     <div>
-      <NavBar
+      {/* <NavBar
         headerRef={headerRef}
         servicesRef={servicesRef}
         projectsRef={projectsRef}
@@ -49,7 +49,7 @@ const Home = () => {
         blogsRef={blogsRef}
         contactRef={contactRef}
         linkToRef={linkToRef}
-      />
+      /> */}
       {scrollPos > 500 && scrollPos < 4000 && (
         <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
       )}
