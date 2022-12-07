@@ -1,42 +1,54 @@
 @import '../../../App.scss';
 
-.Header-Spacing {
-  height: 100px;
-}
-
 .Header {
   width: 100%;
-  height: 980px;
+  height: 100vh;
   background-image: url('../../../images/HeaderBG.png');
   background-size: cover;
   object-fit: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    z-index: -2;
+  }
+
   .Content {
-    margin: 0 0 240px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 0 26rem 0;
 
     .Text {
-      font-size: 2.8rem;
+      color: white;
+      &-Big {
+        font-size: 3.5rem;
+      }
+      &-Small {
+        font-size: 1.5rem;
+      }
     }
-
-    .Btn {
-      margin: 20px;
-      width: 210px;
-      height: 55px;
-      border: solid 5px rgb(51, 255, 0);
-      color: rgb(51, 255, 0);
-      background-color: rgba(51, 255, 0, 0.1);
-      border-radius: 0.5rem;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  }
+  .Btn {
+    // margin: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    width: 24rem;
+    height: 7.5rem;
+    border: solid 0.7rem $secondary0;
+    color: white;
+    background-color: $secondary4;
+    border-radius: 0.5rem;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

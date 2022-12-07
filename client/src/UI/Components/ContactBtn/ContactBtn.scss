@@ -1,11 +1,13 @@
+@import '../../../App.scss';
+
 .ContactBtn {
   cursor: pointer;
-  margin: 800px 1600px;
-  width: 200px;
-  height: 60px;
+  margin: 83vh 0 0 70vw;
+  width: 12.5rem;
+  height: 3.8rem;
   position: fixed;
-  color: #08ff00;
-  border: solid 4px #08ff00;
+  color: $primary0;
+  border: solid 4px $primary0;
   background-color: rgba(8, 255, 0, 0.15);
   border-radius: 1.2rem;
   display: flex;

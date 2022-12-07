@@ -2,16 +2,21 @@
 $upperBreak: 1150px;
 $lowerBreak: 767px;
 $bgColor: rgba(18, 18, 18, 1);
-$color-1: rgb(185, 126, 67);
-$color-2: rgb(77, 52, 35);
-$color-3: rgb(166, 123, 91);
-$color-4: rgb(107, 76, 55);
-$color-5: rgb(211, 163, 116);
-$color-1-tran: rgba(185, 126, 67, 0.8);
-$color-2-tran: rgba(77, 52, 35, 0.8);
-$color-3-tran: rgba(166, 123, 91, 0.8);
-$color-4-tran: rgb(107, 76, 55, 0.8);
-$color-5-tran: rgba(211, 163, 116, 0.8);
+$primary0: #ffc389;
+$primary1: #eea968;
+$primary2: #aa7039;
+$primary3: #663e18;
+$primary4: #221304;
+$secondary0: #ffda89;
+$secondary1: #eec468;
+$secondary2: #aa8739;
+$secondary3: #664e18;
+$secondary4: #221904;
+$tertiary0: #ff9489;
+$tertiary1: #ee7468;
+$tertiary2: #aa4339;
+$tertiary3: #661f18;
+$tertiary4: #220704;
 
 html {
   width: 100%;
@@ -29,7 +34,7 @@ body {
   width: 0.5rem;
 
   &-thumb {
-    background: $color-3;
+    background: $bgColor;
     border-radius: 0.4rem;
     height: 20px;
   }
