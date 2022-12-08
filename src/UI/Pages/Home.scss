@@ -48,5 +48,21 @@
         }
       }
     }
+
+    .TitleBar {
+      margin-top: 5.3rem;
+      width: 100%;
+      height: 17rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 5.7rem;
+        color: black;
+        width: 80%;
+        line-height: 6.7rem;
+      }
+    }
   }
 }
