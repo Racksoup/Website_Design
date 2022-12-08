@@ -1,39 +1,47 @@
 {
-  "name": "website-design",
+  "name": "webpackreact",
   "version": "1.0.0",
-  "description": "Mongodb, Express, React, Node, Heroku App",
-  "main": "server.js",
-  "engines": {
-    "node": "14.x",
-    "npm": "8.x"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "render-build": "npm install && npm run render-postbuild",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "webpack server --hot --open --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "keywords": [],
-  "author": "Connor Rack",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.35.0",
     "axios": "^0.27.2",
-    "bcryptjs": "^2.4.3",
-    "crypto-js": "^4.1.1",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.0",
-    "form-data": "^4.0.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.3",
-    "multer": "^1.4.4",
-    "multer-gridfs-storage": "^5.0.2"
+    "emailjs-com": "^3.2.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
-    "concurrently": "^7.2.0",
-    "nodemon": "^2.0.16"
+    "@babel/core": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "redux-devtools-extension": "^2.13.9",
+    "sass": "^1.51.0",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "svg-url-loader": "^7.1.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
   }
 }
