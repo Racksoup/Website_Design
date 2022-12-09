@@ -140,11 +140,13 @@ const Section6 = () => {
               ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
               Pellentesque habitant{' '}
             </p>
-            <p className='Text'>
-              Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-              ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-              Pellentesque habitant{' '}
-            </p>
+            {window.innerWidth >= 1500 && (
+              <p className='Text'>
+                Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
+                Pellentesque habitant{' '}
+              </p>
+            )}
           </div>
 
           <button className='TiltBtn'>

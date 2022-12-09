@@ -22,6 +22,10 @@
     justify-content: space-between;
     //background-color: blue;
 
+    @media (max-width: 1500px) {
+      width: 100%;
+    }
+
     .Left {
       width: 37rem;
       height: 46.2rem;
@@ -43,6 +47,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 1500px) {
+          width: 30rem;
+        }
       }
 
       .TextLine {
@@ -78,6 +86,9 @@
         width: 20rem;
         cursor: pointer;
 
+        @media (max-width: 1500px) {
+          margin-right: 3.2rem;
+        }
         p {
           cursor: pointer;
         }
@@ -91,11 +102,19 @@
       flex-direction: column;
       align-items: center;
 
+      @media (max-width: 1500px) {
+        width: 50%;
+      }
+
       img {
         position: absolute;
         width: 40rem;
         object-fit: contain;
         z-index: 2;
+
+        @media (max-width: 1500px) {
+          width: 28rem;
+        }
       }
 
       h3 {
@@ -104,12 +123,22 @@
         color: black;
         text-align: center;
         z-index: 3;
+
+        @media (max-width: 1500px) {
+          font-size: 2.2rem;
+          margin-right: 0.9rem;
+        }
       }
       h4 {
         font-size: 2.5rem;
         color: black;
         text-align: center;
         z-index: 3;
+
+        @media (max-width: 1500px) {
+          font-size: 2.2rem;
+          margin-right: 0.9rem;
+        }
       }
 
       .TextBox {
@@ -120,11 +149,21 @@
         flex-direction: column;
         align-items: center;
 
+        @media (max-width: 1500px) {
+          margin-top: 0;
+          width: 20rem;
+        }
+
         .Text {
           margin-top: 0.8rem;
           color: black;
           font-size: 1rem;
           z-index: 3;
+
+          @media (max-width: 1500px) {
+            height: 4rem;
+            overflow: hidden;
+          }
         }
       }
 
@@ -135,6 +174,11 @@
         width: 14rem;
         background-color: $primary4;
         cursor: pointer;
+
+        @media (max-width: 1500px) {
+          margin-top: -5rem;
+          margin-left: 5.4rem;
+        }
 
         p {
           color: white;

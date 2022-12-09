@@ -74,7 +74,7 @@ const Section1 = ({ linkToRef }) => {
 
           <div className='Card-1'>
             <div className='CardHeader CardHeader-2'>
-              <h4>Full + maintenance</h4>
+              {window.innerWidth <= 1500 ? <h4>Full +</h4> : <h4>Full + maintenance</h4>}
             </div>
             <div className='CardContent'>
               <h4>$300 +</h4>

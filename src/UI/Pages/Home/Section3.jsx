@@ -15,25 +15,52 @@ const Section3 = ({ linkToRef }) => {
       <div className='Content'>
         <div className='Left'>
           <div className='LeftBox'>
-            <div className='BlotchBox'>
-              <img src={Blotch} alt='Blotch' className='Blotch' />
-              <div className='TextBox'>
-                <p className='Text'>
-                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                  ante in nibh. Imperdiet nulla.
-                </p>
-                <p className='Text'>
-                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                  ante in nibh. Imperdiet nulla.
-                </p>
-                <p className='Text'>
-                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                  ante in nibh. Imperdiet nulla.
-                </p>
-              </div>
-            </div>
             <img src={BlotchName} alt='BlotchName' className='BlotchName' />
             <img src={ProfileImage} alt='ProfileImage' className='ProfileImage' />
+            {window.innerWidth >= 1500 ? (
+              <div className='BlotchBox'>
+                <img src={Blotch} alt='Blotch' className='Blotch' />
+                <div className='TextBox'>
+                  <p className='Text'>
+                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                    est ante in nibh. Imperdiet nulla.
+                  </p>
+                  <p className='Text'>
+                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                    est ante in nibh. Imperdiet nulla.
+                  </p>
+                  <p className='Text'>
+                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                    est ante in nibh. Imperdiet nulla.
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <div className='BlotchBox-Medium'>
+                <div className='Content'>
+                  <div className='Item'>
+                    <p className='Text'>
+                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                      est ante in nibh. Imperdiet nulla.
+                    </p>
+                  </div>
+                  <hr />
+                  <div className='Item'>
+                    <p className='Text'>
+                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                      est ante in nibh. Imperdiet nulla.
+                    </p>
+                  </div>
+                  <hr />
+                  <div className='Item'>
+                    <p className='Text'>
+                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
+                      est ante in nibh. Imperdiet nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div className='Right'>

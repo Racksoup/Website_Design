@@ -145,6 +145,15 @@ a {
     text-decoration: underline;
     font-size: 3.9rem;
   }
+
+  @media (max-width: 1500px) {
+    height: 6rem;
+    width: 15rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
 }
 
 .Card {
@@ -157,6 +166,10 @@ a {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 1500px) {
+    width: 16rem;
+  }
+
   .CardHeader {
     width: 100%;
     height: 3.7rem;
@@ -165,6 +178,10 @@ a {
     padding: 0 1.7rem;
     display: flex;
     align-items: center;
+
+    @media (max-width: 1500px) {
+      padding: 0 0.9rem;
+    }
 
     p {
       font-size: 1.5rem;
@@ -181,6 +198,10 @@ a {
     padding: 1.7rem;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 1500px) {
+      padding: 1.7rem 0.9rem;
+    }
 
     .TimeRow {
       display: flex;
@@ -239,6 +260,11 @@ a {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 1500px) {
+    width: 23rem;
+    height: 28.4rem;
+  }
+
   .CardHeader {
     width: 100%;
     height: 6rem;
@@ -251,6 +277,10 @@ a {
       font-size: 3rem;
       font-weight: 500;
       color: black;
+
+      @media (max-width: 1500px) {
+        font-size: 2.9rem;
+      }
     }
 
     &-1 {
@@ -295,6 +325,11 @@ a {
           margin-left: 0.5rem;
           color: black;
           font-size: 1.5rem;
+
+          @media (max-width: 1500px) {
+            margin-top: 0.2rem;
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -304,6 +339,9 @@ a {
       color: blue;
       font-size: 1.5rem;
       cursor: pointer;
+      @media (max-width: 1500px) {
+        margin-top: 17.2rem;
+      }
     }
   }
 }

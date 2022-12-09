@@ -15,5 +15,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1500px) {
+      width: 100%;
+      justify-content: space-around;
+
+      .Card-2 {
+        margin: 0 1rem;
+      }
+    }
   }
 }

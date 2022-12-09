@@ -142,9 +142,22 @@ const Websites = ({ data, tab }) => {
     newData = data;
   }
 
-  const remainder = newData.length % 3;
-  const lastRowCutOff = newData.length - remainder;
+  let remainder;
+  let lastRowCutOff;
+  if (window.innerWidth >= 1258) {
+    remainder = newData.length % 3;
+    lastRowCutOff = newData.length - remainder;
+  }
+  if (window.innerWidth < 1258) {
+    remainder = newData.length % 2;
+    if (remainder == 1) {
+      lastRowCutOff = newData.length - 1;
+    } else {
+      lastRowCutOff = newData.length - 2;
+    }
+  }
 
+  console.log(lastRowCutOff);
   return (
     <div className='Websites'>
       {newData.map((x, i) => {
