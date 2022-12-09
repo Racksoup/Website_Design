@@ -3,7 +3,7 @@ import './Section1.scss';
 
 import { Icon } from '@iconify/react';
 
-const Section1 = () => {
+const Section1 = ({ linkToRef }) => {
   return (
     <div className='Section1' id='section1'>
       <div className='Content'>
@@ -32,7 +32,9 @@ const Section1 = () => {
                   <p className='Text Desc'>incididunt ut labore et dolore</p>
                 </div>
               </div>
-              <p className='Text Blue'>Read More</p>
+              <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                Read More
+              </p>
             </div>
           </div>
 
@@ -64,7 +66,9 @@ const Section1 = () => {
                   <p className='Text Desc'>Ut enim ad minim veniam</p>
                 </div>
               </div>
-              <p className='Text Blue'>Read More</p>
+              <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                Read More
+              </p>
             </div>
           </div>
 
@@ -100,7 +104,9 @@ const Section1 = () => {
                   <p className='Text Desc'>quis nostrud exercitation</p>
                 </div>
               </div>
-              <p className='Text Blue'>Read More</p>
+              <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                Read More
+              </p>
             </div>
           </div>
         </div>

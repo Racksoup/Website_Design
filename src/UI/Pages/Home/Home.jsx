@@ -35,12 +35,12 @@ const Home = () => {
   return (
     <div className='Home'>
       <Section0 linkToRef={linkToRef} />
-      <Section1 id='section1' />
-      <Section2 id='section2' />
-      <Section3 id='section3' />
-      <Section4 id='section4' />
-      <Section5 id='section5' />
-      <Section6 id='section6' />
+      <Section1 linkToRef={linkToRef} />
+      <Section2 />
+      <Section3 linkToRef={linkToRef} />
+      <Section4 />
+      <Section5 />
+      <Section6 />
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}

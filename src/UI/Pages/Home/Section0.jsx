@@ -100,7 +100,9 @@ const Section0 = ({ linkToRef }) => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore.
                   </p>
-                  <p className='Text Blue'>Read More</p>
+                  <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                    Read More
+                  </p>
                 </div>
               </div>
 
@@ -118,7 +120,9 @@ const Section0 = ({ linkToRef }) => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore.
                   </p>
-                  <p className='Text Blue'>Read More</p>
+                  <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                    Read More
+                  </p>
                 </div>
               </div>
             </div>
