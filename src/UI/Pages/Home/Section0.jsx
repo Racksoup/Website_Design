@@ -5,7 +5,14 @@ import Internet from '../../../images/Internet.png';
 import Arrow from '../../../images/Arrow.png';
 import { Icon } from '@iconify/react';
 
-const Section0 = () => {
+const Section0 = ({
+  Section0Ref,
+  Section1Ref,
+  Section2Ref,
+  Section3Ref,
+  Section5Ref,
+  Section6Ref,
+}) => {
   return (
     <div className='Section0'>
       <div className='HomeBox'>
