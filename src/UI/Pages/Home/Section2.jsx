@@ -51,6 +51,12 @@ const Section2 = () => {
           <h2>Portfolio</h2>
         </div>
 
+        <a href='https://portfolio-nnjz.onrender.com/' target='_blank' className='Pos'>
+          <div className='TiltBtn TiltBtn-1 GreenBG'>
+            <p>Full Portfolio</p>
+          </div>
+        </a>
+
         <div className='Buttons'>
           {tab == 'All' ? (
             <button className='TiltBtn TiltBtn-Purple'>
