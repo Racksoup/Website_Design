@@ -2,6 +2,72 @@
 
 .Section3 {
   width: 100vw;
-  height: 50rem;
+  height: 43rem;
   background-color: $secondary1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .HeaderBox {
+    position: absolute;
+  }
+
+  .Content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .Left {
+      background-color: white;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: end;
+
+      .LeftBox {
+        width: 60rem;
+        height: 100%;
+      }
+
+      .BlotchBox {
+        position: absolute;
+        margin-top: 17.6rem;
+        margin-left: 5rem;
+
+        .Blotch {
+        }
+      }
+
+      .BlotchName {
+        margin-top: 5.6rem;
+        margin-left: 17.8rem;
+        position: absolute;
+      }
+
+      .ProfileImage {
+        margin-top: 16.5rem;
+        margin-left: 35.1rem;
+        position: absolute;
+      }
+    }
+
+    .Right {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: start;
+
+      .RightBox {
+        width: 60rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .Card {
+        margin-top: 3.5rem;
+      }
+    }
+  }
 }
