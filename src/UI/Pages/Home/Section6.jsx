@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Section6.scss';
 
 import Blotch2 from '../../../images/Blotch1.png';
 
 const Section6 = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const inputChanged = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const submitForm = () => {};
+
   return (
     <div className='Section6' id='section6'>
       <div className='HeaderBox'>
@@ -18,12 +30,30 @@ const Section6 = () => {
               e.preventDefault;
             }}
           >
-            <input type='text' className='TextLine Text' placeholder='Name' />
-            <input type='text' className='TextLine Text' placeholder='E-Mail' />
-            <textarea type='text' className='TextBox Text' placeholder='Message' />
+            <input
+              type='text'
+              className='TextLine Text'
+              placeholder='Name'
+              name='name'
+              onChange={(e) => inputChanged(e)}
+            />
+            <input
+              type='text'
+              className='TextLine Text'
+              placeholder='E-Mail'
+              name='email'
+              onChange={(e) => inputChanged(e)}
+            />
+            <textarea
+              type='text'
+              className='TextBox Text'
+              placeholder='Message'
+              name='message'
+              onChange={(e) => inputChanged(e)}
+            />
           </form>
 
-          <button className='TiltBtn TiltBtn-1 TiltBtn-Purple'>
+          <button className='TiltBtn TiltBtn-1 TiltBtn-Purple' onClick={() => submitForm()}>
             <p>Send message</p>
           </button>
         </div>
