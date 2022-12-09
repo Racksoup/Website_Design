@@ -9,6 +9,11 @@ const Navbar = ({ linkToRef }) => {
           <button className='Title'>
             <h4>Website Design</h4>
           </button>
+
+          <div className='Contact'>
+            <p>613-869-2343</p>
+            <p>Tranquilgorge@outlook.com</p>
+          </div>
         </div>
 
         <div className='Right'>

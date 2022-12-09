@@ -23,6 +23,16 @@
       align-items: center;
       height: 100%;
 
+      .Contact {
+        margin-left: 2.7rem;
+        display: flex;
+
+        p {
+          font-size: 0.9rem;
+          margin-left: 1rem;
+        }
+      }
+
       img {
         width: 2rem;
         height: 2rem;
@@ -49,6 +59,13 @@
       justify-content: space-between;
       align-items: center;
       height: 100%;
+
+      p {
+        font-size: 1.6rem;
+        color: $primary0;
+        padding: 0 1rem;
+        cursor: pointer;
+      }
     }
   }
   .Item {
@@ -61,12 +78,5 @@
     &-End {
       border-right: solid 0.1rem rgba(255, 255, 255, 0.8);
     }
-  }
-
-  p {
-    font-size: 1.6rem;
-    color: $primary0;
-    padding: 0 1rem;
-    cursor: pointer;
   }
 }

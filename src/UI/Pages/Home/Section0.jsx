@@ -10,8 +10,14 @@ const Section0 = ({ linkToRef }) => {
     <div className='Section0' id='section0'>
       <div className='HomeBox'>
         <div className='Header'>
-          <div className='NameBox'>
-            <h2>CONNOR RACK</h2>
+          <div className='Left'>
+            <div className='NameBox'>
+              <h2>CONNOR RACK</h2>
+            </div>
+            <div className='Contact'>
+              <p>613-869-2343</p>
+              <p>Tranquilgorge@outlook.com</p>
+            </div>
           </div>
 
           <div className='HeaderNav'>
