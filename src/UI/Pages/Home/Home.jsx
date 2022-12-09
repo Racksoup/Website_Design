@@ -7,6 +7,7 @@ import Section3 from './Section3';
 import Section4 from './Section4';
 import Section5 from './Section5';
 import Section6 from './Section6';
+import Navbar from '../../Components/Navbar/Navbar.jsx';
 
 const Home = () => {
   const [scrollPos, setScrollPos] = useState(0);
@@ -43,6 +44,7 @@ const Home = () => {
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}
+      {scrollPos > 1080 && <Navbar linkToRef={linkToRef} />}
     </div>
   );
 };
