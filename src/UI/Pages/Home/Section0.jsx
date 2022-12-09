@@ -29,8 +29,8 @@ const Section0 = () => {
 
         <div className='Body'>
           <div className='Left'>
-            <img className='Arrow' src={Arrow} alt='Arrow' />
             <button className='Button'>
+              <img className='Arrow' src={Arrow} alt='Arrow' />
               <p>get in touch!</p>
             </button>
             <p className='String'>
