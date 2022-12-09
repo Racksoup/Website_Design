@@ -12,6 +12,7 @@ const Section0 = ({
   Section3Ref,
   Section5Ref,
   Section6Ref,
+  linkToRef,
 }) => {
   return (
     <div className='Section0'>
@@ -22,11 +23,48 @@ const Section0 = ({
           </div>
 
           <div className='HeaderNav'>
-            <p>home</p>
-            <p>services</p>
-            <p>portfolio</p>
-            <p>about</p>
-            <p>contact</p>
+            <p
+              onClick={() => {
+                linkToRef(Section0Ref);
+              }}
+            >
+              home
+            </p>
+            <p
+              onClick={() => {
+                linkToRef(Section1Ref);
+              }}
+            >
+              services
+            </p>
+            <p
+              onClick={() => {
+                linkToRef(Section2Ref);
+              }}
+            >
+              portfolio
+            </p>
+            <p
+              onClick={() => {
+                linkToRef(Section3Ref);
+              }}
+            >
+              about
+            </p>
+            <p
+              onClick={() => {
+                linkToRef(Section5Ref);
+              }}
+            >
+              blogs
+            </p>
+            <p
+              onClick={() => {
+                linkToRef(Section6Ref);
+              }}
+            >
+              contact
+            </p>
           </div>
         </div>
         <div className='TitleBar'>

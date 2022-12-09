@@ -47,6 +47,7 @@ const Home = () => {
         section3Ref={section3Ref}
         section5Ref={section5Ref}
         section6Ref={section6Ref}
+        linkToRef={linkToRef}
       />
       <Section1 ref={section1Ref} />
       <Section2 ref={section2Ref} />
