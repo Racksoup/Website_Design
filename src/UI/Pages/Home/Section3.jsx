@@ -18,6 +18,20 @@ const Section3 = () => {
           <div className='LeftBox'>
             <div className='BlotchBox'>
               <img src={Blotch} alt='Blotch' className='Blotch' />
+              <div className='TextBox'>
+                <p className='Text'>
+                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                  ante in nibh. Imperdiet nulla.
+                </p>
+                <p className='Text'>
+                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                  ante in nibh. Imperdiet nulla.
+                </p>
+                <p className='Text'>
+                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                  ante in nibh. Imperdiet nulla.
+                </p>
+              </div>
             </div>
             <img src={BlotchName} alt='BlotchName' className='BlotchName' />
             <img src={ProfileImage} alt='ProfileImage' className='ProfileImage' />

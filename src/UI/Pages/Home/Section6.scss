@@ -2,6 +2,133 @@
 
 .Section6 {
   width: 100vw;
-  height: 50rem;
-  background-color: $tertiary1;
+  min-height: 51.1rem;
+  background-color: $tertiary0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+
+  .HeaderBox {
+    position: absolute;
+  }
+
+  .Content {
+    margin-top: 4.2rem;
+    width: 86.5rem;
+    height: 47rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    //background-color: blue;
+
+    .Left {
+      width: 37rem;
+      height: 46.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // background-color: green;
+
+      h4 {
+        font-size: 3.5rem;
+        color: $primary4;
+        rotate: -5deg;
+        text-shadow: 0.2rem 0.2rem 0 black;
+      }
+
+      .Form {
+        width: 100%;
+        margin-top: 2.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .TextLine {
+        margin-bottom: 2rem;
+        padding: 0 1.6rem;
+        width: 100%;
+        height: 3.2rem;
+        color: black;
+        background-color: white;
+        border: solid 0.45rem black;
+        box-shadow: 0.45rem 0.45rem 0 black;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .TextBox {
+        margin-bottom: 2.8rem;
+        padding: 0.8rem 1.6rem;
+        width: 100%;
+        height: 15rem;
+        color: black;
+        background-color: white;
+        border: solid 0.45rem black;
+        box-shadow: 0.45rem 0.45rem 0 black;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .TiltBtn {
+        align-self: end;
+        width: 20rem;
+      }
+    }
+
+    .Right {
+      height: 41rem;
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        position: absolute;
+        width: 40rem;
+        object-fit: contain;
+        z-index: -1;
+      }
+
+      h3 {
+        margin-top: 2.8rem;
+        font-size: 2.5rem;
+        color: black;
+        text-align: center;
+      }
+      h4 {
+        font-size: 2.5rem;
+        color: black;
+        text-align: center;
+      }
+
+      .TextBox {
+        margin-top: 0.4rem;
+        width: 34rem;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Text {
+          margin-top: 0.8rem;
+          color: black;
+          font-size: 1rem;
+        }
+      }
+
+      .TiltBtn {
+        align-self: start;
+        margin-left: -1.7rem;
+        margin-top: 2rem;
+        width: 14rem;
+        background-color: $primary4;
+
+        p {
+          color: white;
+        }
+      }
+    }
+  }
 }

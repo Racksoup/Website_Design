@@ -403,4 +403,11 @@ a {
   &-1 {
     rotate: 2.2deg;
   }
+  &-Purple {
+    background-color: $secondary4;
+
+    p {
+      color: white;
+    }
+  }
 }
