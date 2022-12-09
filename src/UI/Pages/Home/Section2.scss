@@ -38,6 +38,7 @@
         box-shadow: 0.6rem 0.6rem 0 black;
         background-color: $primary1;
         border-radius: 0.8rem;
+        cursor: pointer;
 
         &-Space {
           margin-bottom: 4rem;
@@ -47,6 +48,7 @@
           width: 100%;
           height: 100%;
           overflow: hidden;
+          cursor: pointer;
         }
 
         .Title {
@@ -56,6 +58,7 @@
           justify-content: center;
           color: black;
           font-size: 2rem;
+          cursor: pointer;
         }
       }
     }

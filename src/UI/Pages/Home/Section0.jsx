@@ -66,7 +66,7 @@ const Section0 = ({ linkToRef }) => {
 
         <div className='Body'>
           <div className='Left'>
-            <button className='Button'>
+            <button className='Button' onClick={() => linkToRef('section6')}>
               <img className='Arrow' src={Arrow} alt='Arrow' />
               <p>get in touch!</p>
             </button>

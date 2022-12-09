@@ -1,7 +1,45 @@
 import React, { useState } from 'react';
 import './Section2.scss';
 
-import WebsiteItem from '../../../images/WebsiteItem.png';
+import PandaNFTsItem from '../../../images/PandaNFTsItem.png';
+import FitnessStoreItem from '../../../images/FitnessStoreItem.png';
+import PetStoreItem from '../../../images/PetStoreItem.png';
+import PizzeriaItem from '../../../images/PizzeriaItem.png';
+
+const data = [
+  {
+    title: "Panda NFT's",
+    category: 'Ecommerce',
+    website: 'https://nft-website.onrender.com/',
+    github: 'https://github.com/Racksoup/NTF_Site',
+    description: 'NFT Exchange Website',
+    image: PandaNFTsItem,
+  },
+  {
+    title: "Stefano's Family Pizzeria",
+    category: 'Resturant',
+    website: 'https://stefanos-family-pizzeria.onrender.com/',
+    github: 'https://github.com/Racksoup/StefanosFamilyPizzeria',
+    description: 'Pizzeria Business Website',
+    image: PizzeriaItem,
+  },
+  {
+    title: 'Fitness Store',
+    category: 'Ecommerce',
+    website: 'https://fitness-store.onrender.com/',
+    github: 'https://github.com/Racksoup/FitnessStore',
+    description: 'Fitness and Exercise Equipment Online-Store',
+    image: FitnessStoreItem,
+  },
+  {
+    title: 'Pet Store',
+    category: 'Ecommerce',
+    website: 'https://pet-store.onrender.com/',
+    github: 'https://github.com/Racksoup/PetStore',
+    description: 'Pet Food, Toys, and Supplies',
+    image: PetStoreItem,
+  },
+];
 
 const Section2 = () => {
   const [tab, setTab] = useState('All');
@@ -86,33 +124,50 @@ const Section2 = () => {
           )}
         </div>
 
-        <div className='Websites'>
-          <div className='ImageItem ImageItem-Space'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-          <div className='ImageItem ImageItem-Space'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-          <div className='ImageItem ImageItem-Space'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-          <div className='ImageItem'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-          <div className='ImageItem'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-          <div className='ImageItem'>
-            <img src={WebsiteItem} alt='WebsiteItem' />
-            <div className='Title'>Panda NFT's</div>
-          </div>
-        </div>
+        <Websites data={data} tab={tab} />
       </div>
+    </div>
+  );
+};
+
+const Websites = ({ data, tab }) => {
+  let newData = [];
+  if (tab !== 'All') {
+    data.map((x) => {
+      if (x.category == tab) {
+        newData.push(x);
+      }
+    });
+  } else {
+    newData = data;
+  }
+
+  const remainder = newData.length % 3;
+  const lastRowCutOff = newData.length - remainder;
+
+  return (
+    <div className='Websites'>
+      {newData.map((x, i) => {
+        if (i >= lastRowCutOff) {
+          return (
+            <a href={x.website} target='_blank' key={i}>
+              <div className='ImageItem'>
+                <img src={x.image} alt='Website' />
+                <div className='Title'>{x.title}</div>
+              </div>
+            </a>
+          );
+        } else {
+          return (
+            <a href={x.website} target='_blank' key={i}>
+              <div className='ImageItem ImageItem-Space'>
+                <img src={x.image} alt='Website' />
+                <div className='Title'>{x.title}</div>
+              </div>
+            </a>
+          );
+        }
+      })}
     </div>
   );
 };
