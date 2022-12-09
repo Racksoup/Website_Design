@@ -2,20 +2,51 @@ import React, { useState } from 'react';
 import './Section6.scss';
 
 import Blotch2 from '../../../images/Blotch1.png';
+import { send } from 'emailjs-com';
+
+const Modal = ({ text }) => {
+  if (text == 'Message Sent') {
+    return (
+      <div className='Modal Modal-Success'>
+        <p>{text}</p>
+      </div>
+    );
+  } else {
+    return (
+      <div className='Modal'>
+        <p>{text}</p>
+      </div>
+    );
+  }
+};
 
 const Section6 = () => {
+  const [modalText, setModalText] = useState('');
+  const [showModal, toggleShowModal] = useState(false);
+  const [canSend, toggleCanSend] = useState(true);
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   });
 
+  const textOptions = {
+    sending: 'Sending Message',
+    success: 'Message Sent',
+    failure: 'Failed to Send Message',
+    invalid: 'Invalid E-mail',
+  };
+
   const inputChanged = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const submitForm = () => {
-    if (form.name !== '' && form.message !== '' && form.email !== '') {
+    if (form.name !== '' && form.message !== '' && form.email !== '' && canSend) {
+      toggleCanSend(false);
+      setModalText(textOptions.sending);
+      toggleShowModal(true);
+
       const emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       if (emailRegex.test(form.email)) {
         send(
@@ -26,17 +57,34 @@ const Section6 = () => {
         ).then(
           (result) => {
             console.log('Success', result.status, result.text);
+            setModalText(textOptions.success);
+            setTimeout(() => {
+              toggleShowModal(false);
+              toggleCanSend(true);
+            }, 5000);
           },
           (error) => {
             console.log('Failed', error);
+            setModalText(textOptions.failure);
+            setTimeout(() => {
+              toggleShowModal(false);
+              toggleCanSend(true);
+            }, 2000);
           }
         );
+      } else {
+        setModalText(textOptions.invalid);
+        setTimeout(() => {
+          toggleShowModal(false);
+          toggleCanSend(true);
+        }, 2000);
       }
     }
   };
 
   return (
     <div className='Section6' id='section6'>
+      {showModal && <Modal text={modalText} />}
       <div className='HeaderBox'>
         <h2>Contact</h2>
       </div>

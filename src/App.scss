@@ -316,6 +316,7 @@ a {
   box-shadow: 0.5rem 0.5rem 0 black;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   &:hover {
     .CardContent {
@@ -354,6 +355,7 @@ a {
     display: flex;
     align-items: center;
     border-bottom: 0.5rem solid black;
+    cursor: pointer;
 
     h4 {
       font-size: 3rem;
@@ -372,6 +374,7 @@ a {
   img {
     width: 100%;
     border-bottom: 0.5rem solid black;
+    cursor: pointer;
   }
 
   .CardContent {
@@ -380,14 +383,17 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
     .TimeRow {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       .Icon {
         height: 1.3rem;
         width: 1.3rem;
+        cursor: pointer;
 
         svg {
           color: black;
@@ -401,18 +407,21 @@ a {
         font-size: 1.2rem;
         color: black;
         margin-left: 0.15rem;
+        cursor: pointer;
       }
     }
 
     h4 {
       font-size: 2.1rem;
       color: black;
+      cursor: pointer;
     }
 
     .Desc {
       margin-top: 1.3rem;
       color: black;
       font-size: 1.5rem;
+      cursor: pointer;
     }
   }
 }

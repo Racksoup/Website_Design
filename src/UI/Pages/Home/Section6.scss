@@ -56,6 +56,7 @@
         box-shadow: 0.45rem 0.45rem 0 black;
         border-radius: 1rem;
         font-size: 1.2rem;
+        cursor: text;
       }
 
       .TextBox {
@@ -69,11 +70,17 @@
         box-shadow: 0.45rem 0.45rem 0 black;
         border-radius: 1rem;
         font-size: 1.2rem;
+        cursor: text;
       }
 
       .TiltBtn {
         align-self: end;
         width: 20rem;
+        cursor: pointer;
+
+        p {
+          cursor: pointer;
+        }
       }
     }
 
@@ -127,11 +134,45 @@
         margin-top: 2rem;
         width: 14rem;
         background-color: $primary4;
+        cursor: pointer;
 
         p {
           color: white;
+          cursor: pointer;
         }
       }
+    }
+  }
+}
+
+.Modal {
+  position: fixed;
+  z-index: 6;
+  top: 15rem;
+  height: 6rem;
+  width: 24rem;
+  rotate: 358deg;
+  background-color: $primary2;
+  border: 0.3rem solid black;
+  box-shadow: 0.3rem 0.3rem 0 black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 2rem;
+    color: black;
+  }
+
+  &-Success {
+    width: 25rem;
+    height: 6.5rem;
+    rotate: 2deg;
+    background-color: $secondary4;
+
+    p {
+      color: white;
+      font-size: 3rem;
     }
   }
 }
