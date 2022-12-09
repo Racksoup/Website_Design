@@ -22,15 +22,13 @@ module.exports = (env, argv) => {
         ? [
             new webpack.DefinePlugin({
               'process.env': {
-                STRIPE_KEY: JSON.stringify(process.env.STRIPE_KEY),
+                EMAILJS_SERVICE: JSON.stringify(process.env.EMAILJS_SERVICE),
+                EMAILJS_TEMPLATE: JSON.stringify(process.env.EMAILJS_TEMPLATE),
+                EMAILJS_USER: JSON.stringify(process.env.EMAILJS_USER),
               },
             }),
           ]
-        : [
-            new Dotenv({
-              path: '../.env',
-            }),
-          ]),
+        : [new Dotenv()]),
     ],
     resolve: {
       modules: [__dirname, 'src', 'node_modules'],

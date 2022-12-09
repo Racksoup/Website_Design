@@ -14,7 +14,26 @@ const Section6 = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const submitForm = () => {};
+  const submitForm = () => {
+    if (form.name !== '' && form.message !== '' && form.email !== '') {
+      const emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (emailRegex.test(form.email)) {
+        send(
+          process.env.EMAILJS_SERVICE,
+          process.env.EMAILJS_TEMPLATE,
+          form,
+          process.env.EMAILJS_USER
+        ).then(
+          (result) => {
+            console.log('Success', result.status, result.text);
+          },
+          (error) => {
+            console.log('Failed', error);
+          }
+        );
+      }
+    }
+  };
 
   return (
     <div className='Section6' id='section6'>
