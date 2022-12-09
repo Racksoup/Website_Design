@@ -57,6 +57,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: black;
 
   &:active {
@@ -315,6 +316,35 @@ a {
   box-shadow: 0.5rem 0.5rem 0 black;
   display: flex;
   flex-direction: column;
+
+  &:hover {
+    .CardContent {
+      background-color: black;
+
+      .TimeRow {
+        .Icon {
+          svg {
+            color: white;
+          }
+          path {
+            color: white;
+          }
+        }
+      }
+      p {
+        color: white;
+      }
+      h4 {
+        color: white;
+      }
+      .Desc {
+        color: white;
+      }
+      .Text {
+        color: white;
+      }
+    }
+  }
 
   .CardHeader {
     width: 100%;
