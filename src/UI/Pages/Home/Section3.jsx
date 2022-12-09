@@ -6,13 +6,12 @@ import Blotch from '../../../images/Blotch.png';
 import BlotchName from '../../../images/BlotchName.png';
 import ProfileImage from '../../../images/ProfileImage.png';
 
-const Section3 = () => {
+const Section3 = ({ linkToRef }) => {
   return (
     <div className='Section3' id='section3'>
       <div className='HeaderBox'>
         <h2>about</h2>
       </div>
-
       <div className='Content'>
         <div className='Left'>
           <div className='LeftBox'>
@@ -53,7 +52,9 @@ const Section3 = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore.
                 </p>
-                <p className='Text Blue'>Read More</p>
+                <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                  Read More
+                </p>
               </div>
             </div>
             <div className='Card'>
@@ -70,7 +71,9 @@ const Section3 = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore.
                 </p>
-                <p className='Text Blue'>Read More</p>
+                <p className='Text Blue' onClick={() => linkToRef('section6')}>
+                  Read More
+                </p>
               </div>
             </div>
           </div>
