@@ -2,6 +2,18 @@
 
 .Section5 {
   width: 100vw;
-  height: 50rem;
+  height: 53rem;
   background-color: $primary1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Content {
+    margin-top: 0rem;
+    width: 78rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
