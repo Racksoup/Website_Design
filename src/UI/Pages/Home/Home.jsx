@@ -17,6 +17,11 @@ const Home = () => {
   const section6Ref = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
 
+  const handleScroll = () => {
+    const pos = window.pageYOffset;
+    setScrollPos(pos);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
@@ -24,11 +29,6 @@ const Home = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const handleScroll = () => {
-    const pos = window.pageYOffset;
-    setScrollPos(pos);
-  };
 
   const linkToRef = (ref) => {
     const linkOffset = 100;
