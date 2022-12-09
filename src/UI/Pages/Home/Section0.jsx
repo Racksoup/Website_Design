@@ -6,12 +6,12 @@ import Arrow from '../../../images/Arrow.png';
 import { Icon } from '@iconify/react';
 
 const Section0 = ({
-  Section0Ref,
-  Section1Ref,
-  Section2Ref,
-  Section3Ref,
-  Section5Ref,
-  Section6Ref,
+  section0Ref,
+  section1Ref,
+  section2Ref,
+  section3Ref,
+  section5Ref,
+  section6Ref,
   linkToRef,
 }) => {
   return (
@@ -25,42 +25,42 @@ const Section0 = ({
           <div className='HeaderNav'>
             <p
               onClick={() => {
-                linkToRef(Section0Ref);
+                linkToRef(section0Ref);
               }}
             >
               home
             </p>
             <p
               onClick={() => {
-                linkToRef(Section1Ref);
+                linkToRef(section1Ref);
               }}
             >
               services
             </p>
             <p
               onClick={() => {
-                linkToRef(Section2Ref);
+                linkToRef(section2Ref);
               }}
             >
               portfolio
             </p>
             <p
               onClick={() => {
-                linkToRef(Section3Ref);
+                linkToRef(section3Ref);
               }}
             >
               about
             </p>
             <p
               onClick={() => {
-                linkToRef(Section5Ref);
+                linkToRef(section5Ref);
               }}
             >
               blogs
             </p>
             <p
               onClick={() => {
-                linkToRef(Section6Ref);
+                linkToRef(section6Ref);
               }}
             >
               contact

@@ -37,6 +37,8 @@ const Home = () => {
     window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   };
 
+  console.log(section0Ref);
+
   return (
     <div className='Home'>
       <Section0
