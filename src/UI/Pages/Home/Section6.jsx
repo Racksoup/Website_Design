@@ -5,7 +5,7 @@ import Blotch2 from '../../../images/Blotch1.png';
 
 const Section6 = () => {
   return (
-    <div className='Section6'>
+    <div className='Section6' id='section6'>
       <div className='HeaderBox'>
         <h2>Contact</h2>
       </div>

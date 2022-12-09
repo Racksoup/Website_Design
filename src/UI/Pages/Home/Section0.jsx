@@ -5,17 +5,9 @@ import Internet from '../../../images/Internet.png';
 import Arrow from '../../../images/Arrow.png';
 import { Icon } from '@iconify/react';
 
-const Section0 = ({
-  section0Ref,
-  section1Ref,
-  section2Ref,
-  section3Ref,
-  section5Ref,
-  section6Ref,
-  linkToRef,
-}) => {
+const Section0 = ({ linkToRef }) => {
   return (
-    <div className='Section0'>
+    <div className='Section0' id='section0'>
       <div className='HomeBox'>
         <div className='Header'>
           <div className='NameBox'>
@@ -25,42 +17,42 @@ const Section0 = ({
           <div className='HeaderNav'>
             <p
               onClick={() => {
-                linkToRef(section0Ref);
+                linkToRef('section0');
               }}
             >
               home
             </p>
             <p
               onClick={() => {
-                linkToRef(section1Ref);
+                linkToRef('section1');
               }}
             >
               services
             </p>
             <p
               onClick={() => {
-                linkToRef(section2Ref);
+                linkToRef('section2');
               }}
             >
               portfolio
             </p>
             <p
               onClick={() => {
-                linkToRef(section3Ref);
+                linkToRef('section3');
               }}
             >
               about
             </p>
             <p
               onClick={() => {
-                linkToRef(section5Ref);
+                linkToRef('section5');
               }}
             >
               blogs
             </p>
             <p
               onClick={() => {
-                linkToRef(section6Ref);
+                linkToRef('section6');
               }}
             >
               contact

@@ -9,12 +9,6 @@ import Section5 from './Section5';
 import Section6 from './Section6';
 
 const Home = () => {
-  const section0Ref = useRef(null);
-  const section1Ref = useRef(null);
-  const section2Ref = useRef(null);
-  const section3Ref = useRef(null);
-  const section5Ref = useRef(null);
-  const section6Ref = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
 
   const handleScroll = () => {
@@ -31,32 +25,21 @@ const Home = () => {
   }, []);
 
   const linkToRef = (ref) => {
-    const linkOffset = 100;
-    const refPosition = ref.current.getBoundingClientRect().top;
+    const linkOffset = 0;
+    const refPosition = document.getElementById(ref).getBoundingClientRect().top;
     const offsetPosition = refPosition + window.pageYOffset - linkOffset;
     window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   };
 
-  console.log(section0Ref);
-
   return (
     <div className='Home'>
-      <Section0
-        ref={section0Ref}
-        section0Ref={section0Ref}
-        section1Ref={section1Ref}
-        section2Ref={section2Ref}
-        section3Ref={section3Ref}
-        section5Ref={section5Ref}
-        section6Ref={section6Ref}
-        linkToRef={linkToRef}
-      />
-      <Section1 ref={section1Ref} />
-      <Section2 ref={section2Ref} />
-      <Section3 ref={section3Ref} />
-      <Section4 />
-      <Section5 ref={section5Ref} />
-      <Section6 ref={section6Ref} />
+      <Section0 linkToRef={linkToRef} />
+      <Section1 id='section1' />
+      <Section2 id='section2' />
+      <Section3 id='section3' />
+      <Section4 id='section4' />
+      <Section5 id='section5' />
+      <Section6 id='section6' />
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}
@@ -65,14 +48,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <NavBar
-//   headerRef={headerRef}
-//   servicesRef={servicesRef}
-//   projectsRef={projectsRef}
-//   testimonialsRef={testimonialsRef}
-//   aboutRef={aboutRef}
-//   blogsRef={blogsRef}
-//   contactRef={contactRef}
-//   linkToRef={linkToRef}
-// />

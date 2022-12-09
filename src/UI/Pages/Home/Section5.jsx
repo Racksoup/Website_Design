@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 
 const Section5 = () => {
   return (
-    <div className='Section5'>
+    <div className='Section5' id='section5'>
       <div className='HeaderBox'>
         <h2>Blogs</h2>
       </div>

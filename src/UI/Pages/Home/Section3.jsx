@@ -8,7 +8,7 @@ import ProfileImage from '../../../images/ProfileImage.png';
 
 const Section3 = () => {
   return (
-    <div className='Section3'>
+    <div className='Section3' id='section3'>
       <div className='HeaderBox'>
         <h2>about</h2>
       </div>

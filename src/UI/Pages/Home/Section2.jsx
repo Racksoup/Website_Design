@@ -5,7 +5,7 @@ import WebsiteItem from '../../../images/WebsiteItem.png';
 
 const Section2 = () => {
   return (
-    <div className='Section2'>
+    <div className='Section2' id='section2'>
       <div className='Content'>
         <div className='HeaderBox'>
           <h2>Portfolio</h2>

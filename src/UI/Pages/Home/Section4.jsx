@@ -5,7 +5,7 @@ import NeuBrutalism from '../../../images/NeuBrutalism.png';
 
 const Section4 = () => {
   return (
-    <div className='Section4'>
+    <div className='Section4' id='section4'>
       <img src={NeuBrutalism} alt='NeuBruatlism' />
     </div>
   );
