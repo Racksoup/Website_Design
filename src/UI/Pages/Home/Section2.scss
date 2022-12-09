@@ -60,4 +60,14 @@
       }
     }
   }
+
+  .TiltBtn {
+    &:hover {
+      background-color: $secondary4;
+
+      p {
+        color: white;
+      }
+    }
+  }
 }

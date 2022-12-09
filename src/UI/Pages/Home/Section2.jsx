@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Section2.scss';
 
 import WebsiteItem from '../../../images/WebsiteItem.png';
 
 const Section2 = () => {
+  const [tab, setTab] = useState('All');
+
   return (
     <div className='Section2' id='section2'>
       <div className='Content'>
@@ -12,21 +14,76 @@ const Section2 = () => {
         </div>
 
         <div className='Buttons'>
-          <div className='TiltBtn'>
-            <p>All</p>
-          </div>
-          <div className='TiltBtn TiltBtn-1'>
-            <p>Resturant</p>
-          </div>
-          <div className='TiltBtn'>
-            <p>law</p>
-          </div>
-          <div className='TiltBtn TiltBtn-1'>
-            <p>ecommerce</p>
-          </div>
-          <div className='TiltBtn'>
-            <p>beauty</p>
-          </div>
+          {tab == 'All' ? (
+            <button className='TiltBtn TiltBtn-Purple'>
+              <p>All</p>
+            </button>
+          ) : (
+            <button
+              className='TiltBtn'
+              onClick={() => {
+                setTab('All');
+              }}
+            >
+              <p>All</p>
+            </button>
+          )}
+          {tab == 'Resturant' ? (
+            <button className='TiltBtn TiltBtn-1 TiltBtn-Purple'>
+              <p>Resturant</p>
+            </button>
+          ) : (
+            <button
+              className='TiltBtn TiltBtn-1'
+              onClick={() => {
+                setTab('Resturant');
+              }}
+            >
+              <p>Resturant</p>
+            </button>
+          )}
+          {tab == 'Law' ? (
+            <button className='TiltBtn TiltBtn-Purple'>
+              <p>Law</p>
+            </button>
+          ) : (
+            <button
+              className='TiltBtn'
+              onClick={() => {
+                setTab('Law');
+              }}
+            >
+              <p>Law</p>
+            </button>
+          )}
+          {tab == 'Ecommerce' ? (
+            <button className='TiltBtn TiltBtn-1 TiltBtn-Purple'>
+              <p>Ecommerce</p>
+            </button>
+          ) : (
+            <button
+              className='TiltBtn TiltBtn-1'
+              onClick={() => {
+                setTab('Ecommerce');
+              }}
+            >
+              <p>Ecommerce</p>
+            </button>
+          )}
+          {tab == 'Beauty' ? (
+            <button className='TiltBtn TiltBtn-Purple'>
+              <p>Beauty</p>
+            </button>
+          ) : (
+            <button
+              className='TiltBtn'
+              onClick={() => {
+                setTab('Beauty');
+              }}
+            >
+              <p>Beauty</p>
+            </button>
+          )}
         </div>
 
         <div className='Websites'>
