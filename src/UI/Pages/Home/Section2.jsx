@@ -51,7 +51,7 @@ const Section2 = () => {
           <h2>Portfolio</h2>
         </div>
 
-        <a href='https://portfolio-nnjz.onrender.com/' target='_blank' className='Pos'>
+        <a href='https://portfolio-nnjz.onrender.com/' target='_blank' className='PortfolioLink'>
           <div className='TiltBtn TiltBtn-1 GreenBG'>
             <p>Full Portfolio</p>
           </div>
@@ -154,7 +154,7 @@ const Websites = ({ data, tab }) => {
     remainder = newData.length % 3;
     lastRowCutOff = newData.length - remainder;
   }
-  if (window.innerWidth < 1258) {
+  if (window.innerWidth < 1258 && window.innerWidth >= 839) {
     remainder = newData.length % 2;
     if (remainder == 1) {
       lastRowCutOff = newData.length - 1;
@@ -162,8 +162,10 @@ const Websites = ({ data, tab }) => {
       lastRowCutOff = newData.length - 2;
     }
   }
+  if (window.innerWidth < 839) {
+    lastRowCutOff = newData.length - 1;
+  }
 
-  console.log(lastRowCutOff);
   return (
     <div className='Websites'>
       {newData.map((x, i) => {

@@ -19,27 +19,55 @@
       width: 100%;
     }
 
+    .PortfolioLink {
+      position: absolute;
+      margin-top: 3rem;
+      margin-left: 45rem;
+
+      @media (max-width: 1200px) {
+        margin-left: 30rem;
+      }
+
+      .TiltBtn {
+        width: 17rem;
+        cursor: pointer;
+        rotate: 6deg;
+
+        @media (max-width: 1200px) {
+          width: 10rem;
+          height: 6rem;
+
+          p {
+            font-size: 2.2rem;
+            text-align: center;
+          }
+        }
+      }
+
+      p {
+        cursor: pointer;
+      }
+    }
+
     .Buttons {
       width: 88%;
       margin-top: 5.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
 
-    .Pos {
-      position: absolute;
-      margin-top: 3rem;
-      margin-left: 45rem;
+      @media (max-width: 1200px) {
+        margin-top: 6.5rem;
+        width: 100%;
+        justify-content: space-around;
 
-      .TiltBtn {
-        width: 17rem;
-        cursor: pointer;
-        rotate: 6deg;
-      }
+        .TiltBtn {
+          width: 9rem;
 
-      p {
-        cursor: pointer;
+          p {
+            font-size: 2rem;
+          }
+        }
       }
     }
 
