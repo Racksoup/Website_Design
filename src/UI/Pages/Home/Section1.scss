@@ -12,6 +12,10 @@
     height: 49.5rem;
   }
 
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
   .Content {
     height: 100%;
     width: 88rem;
@@ -26,6 +30,11 @@
       margin-top: 3.6rem;
       font-size: 1.9rem;
       color: black;
+
+      @media (max-width: 1200px) {
+        width: 80%;
+        text-align: center;
+      }
     }
 
     .CardBox {
@@ -37,6 +46,14 @@
 
       @media (max-width: 1500px) {
         justify-content: space-around;
+      }
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+
+        .Card-1 {
+          margin-bottom: 5rem;
+        }
       }
     }
   }

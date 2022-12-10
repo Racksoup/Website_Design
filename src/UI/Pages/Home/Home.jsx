@@ -35,8 +35,8 @@ const Home = () => {
   return (
     <div className='Home'>
       <Section0 linkToRef={linkToRef} />
-      {/* <Section1 linkToRef={linkToRef} />
-      <Section2 />
+      <Section1 linkToRef={linkToRef} />
+      {/* <Section2 />
       <Section3 linkToRef={linkToRef} />
       <Section4 />
       <Section5 />

@@ -50,6 +50,10 @@
         font-size: 2rem;
         color: $primary0;
         padding: 0 1rem;
+
+        @media (max-width: 1500px) {
+          height: 100%;
+        }
       }
 
       .Title {
@@ -64,7 +68,12 @@
       align-items: center;
       height: 100%;
 
-      p {
+      .Item {
+        border-left: solid 0.1rem rgba(255, 255, 255, 0.8);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 1.6rem;
         color: $primary0;
         padding: 0 1rem;
@@ -73,18 +82,46 @@
         @media (max-width: 1500px) {
           font-size: 1.3rem;
         }
+
+        &-End {
+          border-right: solid 0.1rem rgba(255, 255, 255, 0.8);
+        }
       }
     }
-  }
-  .Item {
-    border-left: solid 0.1rem rgba(255, 255, 255, 0.8);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    &-End {
-      border-right: solid 0.1rem rgba(255, 255, 255, 0.8);
+    .Hamburger {
+      width: 7rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .Icon {
+        height: 2rem;
+        width: 2rem;
+
+        path {
+          color: white;
+        }
+      }
+
+      .DropDown {
+        position: fixed;
+        top: 2.3rem;
+        right: 0;
+        width: 14rem;
+        background-color: black;
+
+        p {
+          width: 100%;
+          padding: 0.4rem;
+          font-size: 2.5rem;
+
+          &:hover {
+            background-color: grey;
+          }
+        }
+      }
     }
   }
 }
