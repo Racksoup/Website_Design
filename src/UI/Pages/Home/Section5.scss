@@ -8,6 +8,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+
   .Content {
     margin-top: 0rem;
     width: 78rem;
@@ -23,6 +27,11 @@
       .Card-2 {
         margin: 0 1rem;
       }
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      height: 85rem;
     }
   }
 }

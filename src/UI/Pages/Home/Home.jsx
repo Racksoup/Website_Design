@@ -38,10 +38,9 @@ const Home = () => {
       <Section1 linkToRef={linkToRef} />
       <Section2 />
       <Section3 linkToRef={linkToRef} />
-      {/*
       <Section4 />
       <Section5 />
-      <Section6 /> */}
+      <Section6 />
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}
