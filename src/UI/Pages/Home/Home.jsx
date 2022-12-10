@@ -37,7 +37,8 @@ const Home = () => {
       <Section0 linkToRef={linkToRef} />
       <Section1 linkToRef={linkToRef} />
       <Section2 />
-      {/* <Section3 linkToRef={linkToRef} />
+      <Section3 linkToRef={linkToRef} />
+      {/*
       <Section4 />
       <Section5 />
       <Section6 /> */}
