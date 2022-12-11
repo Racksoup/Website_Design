@@ -14,12 +14,20 @@
     height: 2.3rem;
   }
 
+  @media (max-width: 750px) {
+    height: 2.8rem;
+  }
+
   .Content {
     width: 90rem;
-    height: 2.8rem;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
 
     .Left {
       display: flex;
@@ -30,6 +38,10 @@
       .Contact {
         margin-left: 2.7rem;
         display: flex;
+
+        @media (max-width: 750px) {
+          display: none;
+        }
 
         p {
           font-size: 0.9rem;
@@ -96,12 +108,21 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: 750px) {
+        width: 5rem;
+      }
+
       .Icon {
         height: 2rem;
         width: 2rem;
 
         path {
           color: white;
+        }
+
+        @media (max-width: 750px) {
+          height: 3rem;
+          width: 3rem;
         }
       }
 

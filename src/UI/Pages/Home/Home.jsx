@@ -44,7 +44,8 @@ const Home = () => {
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}
-      {scrollPos > 1080 && <Navbar linkToRef={linkToRef} />}
+      {scrollPos > 1080 && window.innerWidth >= 750 && <Navbar linkToRef={linkToRef} />}
+      {window.innerWidth < 750 && <Navbar linkToRef={linkToRef} />}
     </div>
   );
 };

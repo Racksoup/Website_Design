@@ -126,32 +126,43 @@ const Section6 = () => {
         </div>
         <div className='Right'>
           <img src={Blotch2} alt='Blotch' />
-          <h3>need to know more details.</h3>
+          <h3>need to know more details?</h3>
           <h4>get in touch!</h4>
 
-          <div className='TextBox'>
-            <p className='Text'>
-              Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-              ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-              Pellentesque habitant{' '}
-            </p>
-            <p className='Text'>
-              Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-              ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-              Pellentesque habitant{' '}
-            </p>
-            {window.innerWidth >= 1500 && (
+          {window.innerWidth >= 750 && (
+            <div className='TextBox'>
               <p className='Text'>
                 Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
                 ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
                 Pellentesque habitant{' '}
               </p>
-            )}
-          </div>
+              <p className='Text'>
+                Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
+                Pellentesque habitant{' '}
+              </p>
+              {window.innerWidth >= 1500 && (
+                <p className='Text'>
+                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
+                  ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
+                  Pellentesque habitant{' '}
+                </p>
+              )}
+            </div>
+          )}
 
-          <button className='TiltBtn'>
-            <p>Get started</p>
-          </button>
+          {window.innerWidth >= 750 && (
+            <button className='TiltBtn'>
+              <p>Get started</p>
+            </button>
+          )}
+
+          {window.innerWidth < 750 && (
+            <div className='ContactInfo'>
+              <p>613-869-2343</p>
+              <p>Tranquilgorge@outlook.com</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

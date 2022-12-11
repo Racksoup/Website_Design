@@ -265,6 +265,12 @@ a {
     height: 28.4rem;
   }
 
+  @media (max-width: 750px) {
+    width: 19rem;
+    margin-right: 0.3rem;
+    height: 33rem;
+  }
+
   .CardHeader {
     width: 100%;
     height: 6rem;
@@ -272,6 +278,10 @@ a {
     padding: 0 1.9rem;
     display: flex;
     align-items: center;
+
+    @media (max-width: 750px) {
+      padding: 0 1.2rem;
+    }
 
     h4 {
       font-size: 3rem;
@@ -297,6 +307,10 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 750px) {
+      padding: 1.9rem 1.2rem;
+    }
 
     h4 {
       font-size: 2.1rem;
@@ -339,8 +353,13 @@ a {
       color: blue;
       font-size: 1.5rem;
       cursor: pointer;
+
       @media (max-width: 1500px) {
         margin-top: 17.2rem;
+      }
+
+      @media (max-width: 750px) {
+        margin-top: 21.7rem;
       }
     }
   }
@@ -355,6 +374,16 @@ a {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+
+  @media (max-width: 1500px) {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 750px) {
+    height: 37.5rem;
+    width: 19rem;
+    margin-right: 1.4rem;
+  }
 
   &:hover {
     .CardContent {

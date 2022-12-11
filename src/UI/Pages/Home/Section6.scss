@@ -39,6 +39,16 @@
       flex-direction: column;
       align-items: center;
 
+      @media (max-width: 750px) {
+        width: 100%;
+      }
+
+      @media (max-width: 750px) {
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+      }
+
       h4 {
         font-size: 3.5rem;
         color: $primary4;
@@ -55,6 +65,11 @@
 
         @media (max-width: 1500px) {
           width: 30rem;
+        }
+
+        @media (max-width: 750px) {
+          width: 100%;
+          padding: 0 1rem;
         }
       }
 
@@ -97,6 +112,12 @@
         p {
           cursor: pointer;
         }
+
+        @media (max-width: 750px) {
+          margin-right: 0;
+          width: 17rem;
+          align-self: center;
+        }
       }
     }
 
@@ -115,6 +136,11 @@
         height: 30rem;
       }
 
+      @media (max-width: 750px) {
+        width: 22rem;
+        height: 15rem;
+      }
+
       img {
         position: absolute;
         width: 40rem;
@@ -123,6 +149,11 @@
 
         @media (max-width: 1500px) {
           width: 28rem;
+        }
+
+        @media (max-width: 750px) {
+          width: 20rem;
+          margin-top: 0.6rem;
         }
       }
 
@@ -192,6 +223,18 @@
         p {
           color: white;
           cursor: pointer;
+        }
+      }
+
+      .ContactInfo {
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          color: black;
+          font-size: 1rem;
         }
       }
     }

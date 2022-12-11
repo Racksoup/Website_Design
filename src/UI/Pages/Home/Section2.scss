@@ -28,6 +28,12 @@
         margin-left: 30rem;
       }
 
+      @media (max-width: 750px) {
+        position: relative;
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+      }
+
       .TiltBtn {
         width: 17rem;
         cursor: pointer;
@@ -41,6 +47,12 @@
             font-size: 2.2rem;
             text-align: center;
           }
+        }
+
+        @media (max-width: 750px) {
+          rotate: 0deg;
+          width: 13rem;
+          height: 4rem;
         }
       }
 
@@ -69,6 +81,22 @@
           }
         }
       }
+
+      @media (max-width: 750px) {
+        flex-wrap: wrap;
+        width: 90%;
+        margin-top: 4rem;
+
+        .TiltBtn {
+          height: 3.2rem;
+          width: 7rem;
+          margin-bottom: 1rem;
+
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
     }
 
     .GreenBG {
@@ -88,6 +116,11 @@
         justify-content: space-around;
       }
 
+      @media (max-width: 750px) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
       .ImageItem {
         width: 26.2rem;
         height: 17.3rem;
@@ -95,6 +128,11 @@
         background-color: $primary1;
         border-radius: 0.8rem;
         cursor: pointer;
+
+        @media (max-width: 750px) {
+          width: 17rem;
+          height: 11.7rem;
+        }
 
         &-Space {
           margin-bottom: 4rem;
@@ -115,6 +153,11 @@
           color: black;
           font-size: 2rem;
           cursor: pointer;
+
+          @media (max-width: 750px) {
+            margin-top: -2.2rem;
+            font-size: 1.6rem;
+          }
         }
       }
     }
