@@ -209,6 +209,10 @@
 
         .ArrowBox {
           width: 7rem;
+
+          @media (max-width: 600px) {
+            margin-left: -6rem;
+          }
         }
 
         .Arrow {

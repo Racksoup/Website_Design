@@ -72,12 +72,19 @@ const Section0 = ({ linkToRef }) => {
 
         <div className='Body'>
           <div className='Left'>
-            <div className='ArrowBox'>
-              <img className='Arrow' src={Arrow} alt='Arrow' />
+            {window.innerWidth >= 600 && (
+              <div className='ArrowBox'>
+                <img className='Arrow' src={Arrow} alt='Arrow' />
+                <button className='Button' onClick={() => linkToRef('section6')}>
+                  <p>get in touch!</p>
+                </button>
+              </div>
+            )}
+            {window.innerWidth < 600 && (
               <button className='Button' onClick={() => linkToRef('section6')}>
                 <p>get in touch!</p>
               </button>
-            </div>
+            )}
             <div className='TextBox'>
               <p className='Text'>
                 I build increadible website experiences! I deliver websites that are responsive,
