@@ -123,43 +123,47 @@
 
     .Right {
       height: 41rem;
-      width: 30rem;
+      width: 50%;
+      position: absolute;
+      overflow-x: hidden;
+      right: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: -2rem;
 
       @media (max-width: 1500px) {
         width: 50%;
       }
 
       @media (max-width: 1200px) {
-        height: 30rem;
+        position: relative;
+        overflow-x: visible;
       }
 
       @media (max-width: 750px) {
         width: 22rem;
-        height: 15rem;
+        height: 22rem;
       }
 
       img {
-        position: absolute;
-        width: 40rem;
-        object-fit: contain;
+        width: 45rem;
+        object-fit: cover;
         z-index: 2;
 
         @media (max-width: 1500px) {
-          width: 28rem;
+          width: 40rem;
         }
 
         @media (max-width: 750px) {
-          width: 20rem;
-          margin-top: 0.6rem;
+          width: 32rem;
         }
       }
 
       h3 {
-        margin-top: 2.8rem;
-        font-size: 2.5rem;
+        position: absolute;
+        margin-top: 5.2rem;
+        font-size: 2.3rem;
         color: black;
         text-align: center;
         z-index: 3;
@@ -168,9 +172,17 @@
           font-size: 2.2rem;
           margin-right: 0.9rem;
         }
+
+        @media (max-width: 750px) {
+          margin-top: 6rem;
+          width: 110%;
+          margin-left: -0.8rem;
+        }
       }
       h4 {
-        font-size: 2.5rem;
+        position: absolute;
+        font-size: 2.3rem;
+        margin-top: 7.6rem;
         color: black;
         text-align: center;
         z-index: 3;
@@ -178,19 +190,29 @@
         @media (max-width: 1500px) {
           font-size: 2.2rem;
           margin-right: 0.9rem;
+        }
+
+        @media (max-width: 750px) {
+          margin-left: -0.8rem;
+          margin-top: 8.7rem;
         }
       }
 
       .TextBox {
-        margin-top: 0.4rem;
-        width: 34rem;
+        position: absolute;
+        margin-top: 10.3rem;
+        margin-left: -2rem;
+        width: 32rem;
         height: 19rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @media (max-width: 1500px) {
-          margin-top: 0;
+          width: 20rem;
+        }
+
+        @media (max-width: 750px) {
           width: 20rem;
         }
 
@@ -209,14 +231,14 @@
 
       .TiltBtn {
         align-self: start;
-        margin-left: -1.7rem;
+        margin-left: 2rem;
         margin-top: 2rem;
         width: 14rem;
         background-color: $primary4;
         cursor: pointer;
 
         @media (max-width: 1500px) {
-          margin-top: -5rem;
+          margin-top: 4.1rem;
           margin-left: 5.4rem;
         }
 
@@ -231,6 +253,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 750px) {
+          width: 20rem;
+          margin-top: -8rem;
+          margin-left: -1.4rem;
+        }
 
         p {
           color: black;

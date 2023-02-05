@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Section6.scss';
 
-import Blotch2 from '../../../images/Blotch1.png';
+import Cloud from '../../../images/CloudNeubrutalism.png';
 import { send } from 'emailjs-com';
 
 const Modal = ({ text }) => {
@@ -125,7 +125,7 @@ const Section6 = () => {
           </button>
         </div>
         <div className='Right'>
-          <img src={Blotch2} alt='Blotch' />
+          <img src={Cloud} alt='Blotch' />
           <h3>need to know more details?</h3>
           <h4>get in touch!</h4>
 

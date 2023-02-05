@@ -165,6 +165,9 @@ const Websites = ({ data, tab }) => {
   if (window.innerWidth < 839) {
     lastRowCutOff = newData.length - 1;
   }
+  if (window.innerWidth < 750) {
+    lastRowCutOff = newData.length;
+  }
 
   return (
     <div className='Websites'>
