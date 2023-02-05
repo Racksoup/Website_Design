@@ -1,7 +1,7 @@
 import React from 'react';
 import './Section4.scss';
 
-import NeuBrutalism from '../../../images/NeuBrutalism.png';
+import NeuBrutalism from '../../../images/NeuBrutalism2.png';
 
 const Section4 = () => {
   return (

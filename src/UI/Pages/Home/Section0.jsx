@@ -72,36 +72,26 @@ const Section0 = ({ linkToRef }) => {
 
         <div className='Body'>
           <div className='Left'>
-            <button className='Button' onClick={() => linkToRef('section6')}>
+            <div className='ArrowBox'>
               <img className='Arrow' src={Arrow} alt='Arrow' />
-              <p>get in touch!</p>
-            </button>
-            {window.innerWidth >= 1200 ? (
-              <p className='String Text'>
-                I build increadible website experiences! My websites are responsive, functional, and
-                engaging! If you have a website or software idea that needs implementation, I can
-                build it! My website packages come with unlimited content updates. I am someone who
-                will work with you to create an asset for your business. My goal is to bring in more
-                customer traffic and keep customers engaged for longer. Your satisfaction is our #1
-                priority.
+              <button className='Button' onClick={() => linkToRef('section6')}>
+                <p>get in touch!</p>
+              </button>
+            </div>
+            <div className='TextBox'>
+              <p className='Text'>
+                I build increadible website experiences! I deliver websites that are responsive,
+                functional, and engaging! If you have a website or software idea we can discuss the
+                best way to create it!
               </p>
-            ) : (
-              <div className='TextBox'>
+              {window.innerWidth > 750 && (
                 <p className='Text'>
-                  I build increadible website experiences! My websites are responsive, functional,
-                  and engaging! If you have a website or software idea that needs implementation, I
-                  can build it!
+                  Packages come with unlimited content updates. I am someone who will work with you
+                  to create an asset for your business. My goal is to bring in more customer traffic
+                  and keep customers engaged for longer. Your satisfaction is my #1 priority.
                 </p>
-                {window.innerWidth > 750 && (
-                  <p className='Text'>
-                    My website packages come with unlimited content updates. I am someone who will
-                    work with you to create an asset for your business. My goal is to bring in more
-                    customer traffic and keep customers engaged for longer. Your satisfaction is our
-                    #1 priority.
-                  </p>
-                )}
-              </div>
-            )}
+              )}
+            </div>
           </div>
           <div className='Rightx'>
             <div className='Content'>
