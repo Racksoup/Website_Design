@@ -10,7 +10,7 @@ const Section1 = ({ linkToRef }) => {
         <div className='HeaderBox'>
           <h2>Services</h2>
         </div>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3>
+        <h3>Websites that fit the needs of your business</h3>
         <div className='CardBox'>
           <div className='Card-1'>
             <div className='CardHeader'>
@@ -21,15 +21,15 @@ const Section1 = ({ linkToRef }) => {
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>Lorem ipsum dolor sit amet</p>
+                  <p className='Text Desc'>5 Pages</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>consectetur adipiscing elit</p>
+                  <p className='Text Desc'>3 Months of Content Updates</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>incididunt ut labore et dolore</p>
+                  <p className='Text Desc'>Mailing List Setup</p>
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>
@@ -47,23 +47,23 @@ const Section1 = ({ linkToRef }) => {
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>Lorem ipsum dolor sit amet</p>
+                  <p className='Text Desc'>10 Pages</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>consectetur adipiscing elit</p>
+                  <p className='Text Desc'>Backend for Content Updates</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>incididunt ut labore et dolore</p>
+                  <p className='Text Desc'>Mailing List Setup</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>sed do eiusmod tempor</p>
+                  <p className='Text Desc'>Accounts and User Data</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>Ut enim ad minim veniam</p>
+                  <p className='Text Desc'>3 Months of Design Updates</p>
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>
@@ -81,27 +81,27 @@ const Section1 = ({ linkToRef }) => {
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>Lorem ipsum dolor sit amet</p>
+                  <p className='Text Desc'>Unlimited Pages</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>consectetur adipiscing elit</p>
+                  <p className='Text Desc'>Backend for Content Updates</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>incididunt ut labore et dolore</p>
+                  <p className='Text Desc'>Mailing Managment</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>sed do eiusmod tempor</p>
+                  <p className='Text Desc'>Accounts and User Data</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>Ut enim ad minim veniam</p>
+                  <p className='Text Desc'>Unlimited Design Updates</p>
                 </div>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
-                  <p className='Text Desc'>quis nostrud exercitation</p>
+                  <p className='Text Desc'>SEO and Social Media Management</p>
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>

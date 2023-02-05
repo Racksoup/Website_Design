@@ -1,6 +1,7 @@
 import React from 'react';
 import './Section5.scss';
-import DevBlog from '../../../images/DevBlog.png';
+import Computer from '../../../images/Computer.jpg';
+import TaiwanLandscape from '../../../images/TaiwanLandscape.jpg';
 
 import { Icon } from '@iconify/react';
 
@@ -11,43 +12,44 @@ const Section5 = () => {
         <h2>Blogs</h2>
       </div>
       <div className='Content'>
-        <a href='https://dev-blog-jib0.onrender.com/' target='_blank'>
+        <a href='https://www.rackhistory.ca/#/blog/63a242b30a1ea0d32740d12e/' target='_blank'>
           <div className='Card-2'>
             <div className='CardHeader'>
-              <h4>Testimonial</h4>
+              <h4>History Blog</h4>
             </div>
-            <img src={DevBlog} alt='DevBlog' />
+            <img src={TaiwanLandscape} alt='History Blog' />
 
             <div className='CardContent'>
               <div className='TimeRow'>
                 <Icon icon='ic:baseline-access-time' className='Icon' />
-                <p className='Text'>05/30/23</p>
+                <p className='Text'>12/19/2023</p>
               </div>
-              <h4>LOREM IPSUM</h4>
+              <h4>TAIWAN HISTORY</h4>
               <p className='Text Desc'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore.
+                Taiwan is an island off the coast of China in the south China sea. It is roughly
+                35,000 square kilometers, about the same size as Vancouver island in Canada.
               </p>
             </div>
           </div>
         </a>
 
-        <a href='https://history-blog.onrender.com/' target='_blank'>
+        <a href='https://rackdev.ca/#/blog/63a38e70dbfb10af243784a5/' target='_blank'>
           <div className='Card-2'>
             <div className='CardHeader'>
-              <h4>Testimonial</h4>
+              <h4>Developer Blog</h4>
             </div>
-            <img src={DevBlog} alt='DevBlog' />
+            <img src={Computer} alt='DevBlog' />
 
             <div className='CardContent'>
               <div className='TimeRow'>
                 <Icon icon='ic:baseline-access-time' className='Icon' />
-                <p className='Text'>05/30/23</p>
+                <p className='Text'>12/20/2023</p>
               </div>
-              <h4>LOREM IPSUM</h4>
+              <h4>So You Want To Be A Programmer?</h4>
               <p className='Text Desc'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore.
+                When you start out programming you have no idea what you are going to be doing. All
+                you know is that you want to build apps/programs. You might have an idea to build,
+                but you wont know how to build it.
               </p>
             </div>
           </div>

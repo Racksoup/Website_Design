@@ -428,6 +428,9 @@ a {
       font-size: 3rem;
       font-weight: 500;
       color: white;
+      @media (max-width: 750px) {
+        font-size: 2.6rem;
+      }
     }
 
     &-1 {
@@ -442,6 +445,11 @@ a {
     width: 100%;
     border-bottom: 0.5rem solid black;
     cursor: pointer;
+    height: 18.6rem;
+
+    @media (max-width: 750px) {
+      min-height: 13rem;
+    }
   }
 
   .CardContent {
@@ -489,6 +497,12 @@ a {
       color: black;
       font-size: 1.5rem;
       cursor: pointer;
+      max-height: 6rem;
+      overflow: hidden;
+
+      @media (max-width: 750px) {
+        max-height: 10rem;
+      }
     }
   }
 }

@@ -132,9 +132,8 @@ const Section6 = () => {
           {window.innerWidth >= 750 && (
             <div className='TextBox'>
               <p className='Text'>
-                Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-                Pellentesque habitant{' '}
+                Offering customers the best service possible. our client satisfation is our #1
+                priority. If we can build
               </p>
               <p className='Text'>
                 Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est

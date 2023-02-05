@@ -78,36 +78,28 @@ const Section0 = ({ linkToRef }) => {
             </button>
             {window.innerWidth >= 1200 ? (
               <p className='String Text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Looking for someone to build the website of your dreams! We build Responsive,
+                functional, engaging, websites with features such as mailing lists and content
+                upload. If you have a website/software idea that needs implementation, we can build
+                it! When you purchase a website you get unlimited content updates as well as someone
+                who will work with you to create an asset for your business. Our websites help to
+                bring in more customer traffic and also keep customers engaged for longer. Client
+                satisfaction is our #1 priority.
               </p>
             ) : (
               <div className='TextBox'>
                 <p className='Text'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident,
+                  Looking for someone to build the website of your dreams! We build Responsive,
+                  funcitonal, engaging, websites with features such as mailing lists and content
+                  upload. If you have a website/software idea that needs implementation, we can
+                  build it!
                 </p>
                 {window.innerWidth > 750 && (
                   <p className='Text'>
-                    sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                    qui officia deserunt mollit anim id est laborum.
+                    When you purchase a website you get unlimited content updates as well as someone
+                    who will work with you to create an asset for your business. Our websites help
+                    to bring in more customer traffic and also keep customers engaged for longer.
+                    Client satasfaction is our #1 priority.
                   </p>
                 )}
               </div>
