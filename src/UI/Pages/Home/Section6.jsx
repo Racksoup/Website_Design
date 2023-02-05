@@ -132,19 +132,17 @@ const Section6 = () => {
           {window.innerWidth >= 750 && (
             <div className='TextBox'>
               <p className='Text'>
-                Offering customers the best service possible. our client satisfation is our #1
-                priority. If we can build
+                Have any questions about your project you aren't sure about? Give me a shout and we
+                can figure out the right package and website for your needs.
               </p>
               <p className='Text'>
-                Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-                Pellentesque habitant{' '}
+                The website packages I offer are designed to give you the website you need without
+                any unnessecary features.
               </p>
               {window.innerWidth >= 1500 && (
                 <p className='Text'>
-                  Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in est
-                  ante in nibh. Imperdiet nulla malesuada pellentesque elit eget gravida yui sociis.
-                  Pellentesque habitant{' '}
+                  Not sure what style will work best for to connect with your customers? I can help
+                  you pick the best theme the represent your business.
                 </p>
               )}
             </div>

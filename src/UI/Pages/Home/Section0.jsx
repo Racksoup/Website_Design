@@ -78,28 +78,26 @@ const Section0 = ({ linkToRef }) => {
             </button>
             {window.innerWidth >= 1200 ? (
               <p className='String Text'>
-                Looking for someone to build the website of your dreams! We build Responsive,
-                functional, engaging, websites with features such as mailing lists and content
-                upload. If you have a website/software idea that needs implementation, we can build
-                it! When you purchase a website you get unlimited content updates as well as someone
-                who will work with you to create an asset for your business. Our websites help to
-                bring in more customer traffic and also keep customers engaged for longer. Client
-                satisfaction is our #1 priority.
+                I build increadible website experiences! My websites are responsive, functional, and
+                engaging! If you have a website or software idea that needs implementation, I can
+                build it! My website packages come with unlimited content updates. I am someone who
+                will work with you to create an asset for your business. My goal is to bring in more
+                customer traffic and keep customers engaged for longer. Your satisfaction is our #1
+                priority.
               </p>
             ) : (
               <div className='TextBox'>
                 <p className='Text'>
-                  Looking for someone to build the website of your dreams! We build Responsive,
-                  funcitonal, engaging, websites with features such as mailing lists and content
-                  upload. If you have a website/software idea that needs implementation, we can
-                  build it!
+                  I build increadible website experiences! My websites are responsive, functional,
+                  and engaging! If you have a website or software idea that needs implementation, I
+                  can build it!
                 </p>
                 {window.innerWidth > 750 && (
                   <p className='Text'>
-                    When you purchase a website you get unlimited content updates as well as someone
-                    who will work with you to create an asset for your business. Our websites help
-                    to bring in more customer traffic and also keep customers engaged for longer.
-                    Client satasfaction is our #1 priority.
+                    My website packages come with unlimited content updates. I am someone who will
+                    work with you to create an asset for your business. My goal is to bring in more
+                    customer traffic and keep customers engaged for longer. Your satisfaction is our
+                    #1 priority.
                   </p>
                 )}
               </div>

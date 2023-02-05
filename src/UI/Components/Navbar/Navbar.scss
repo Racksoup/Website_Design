@@ -3,8 +3,8 @@
 .Navbar {
   position: fixed;
   width: 100vw;
-  height: 2.8rem;
-  background-color: rgba(0, 0, 0, 0.87);
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   }
 
   @media (max-width: 750px) {
-    height: 2.8rem;
+    height: 2.6rem;
   }
 
   .Content {

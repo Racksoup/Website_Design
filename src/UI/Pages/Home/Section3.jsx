@@ -22,16 +22,16 @@ const Section3 = ({ linkToRef }) => {
                 <img src={Blotch} alt='Blotch' className='Blotch' />
                 <div className='TextBox'>
                   <p className='Text'>
-                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                    est ante in nibh. Imperdiet nulla.
+                    I am a Canadian Web-Developer, born in Gatineau and I've lived in Ottawa my
+                    whole life.
                   </p>
                   <p className='Text'>
-                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                    est ante in nibh. Imperdiet nulla.
+                    I have been developing websites and software for 3 years. I went to school for
+                    video game development in 2020.
                   </p>
                   <p className='Text'>
-                    Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                    est ante in nibh. Imperdiet nulla.
+                    My passions include history, politics, economics, gaming, dogs, cooking and,
+                    literature.
                   </p>
                 </div>
               </div>
@@ -40,22 +40,22 @@ const Section3 = ({ linkToRef }) => {
                 <div className='Content'>
                   <div className='Item'>
                     <p className='Text'>
-                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                      est ante in nibh. Imperdiet nulla.
+                      I am a Canadian Web-Developer, born in Gatineau and I've lived in Ottawa my
+                      whole life.
                     </p>
                   </div>
                   <hr />
                   <div className='Item'>
                     <p className='Text'>
-                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                      est ante in nibh. Imperdiet nulla.
+                      I have been developing websites and software for 3 years. In 2020 I went to
+                      school for video game development.
                     </p>
                   </div>
                   <hr />
                   <div className='Item'>
                     <p className='Text'>
-                      Neque convallis a cras semper auctor neque. Vulputate dignissim suspendisse in
-                      est ante in nibh. Imperdiet nulla.
+                      My passions include history, politics, economics, gaming, dogs, cooking and,
+                      literature.
                     </p>
                   </div>
                 </div>
