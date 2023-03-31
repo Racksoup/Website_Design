@@ -1,0 +1,87 @@
+@import '../../../App.scss';
+
+.Advice {
+  width: 100%;
+  min-height: 54rem;
+  background-color: $tertiary0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Content {
+    height: 100%;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .Info {
+      margin-top: 3.5rem;
+      width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-L2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-L3 {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+      }
+
+      &-L4 {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+      }
+
+      .ArrowBox {
+        margin: 1.4rem 0;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .StraightArrow {
+          height: 5rem;
+
+          &-Left {
+            transform: rotate(45deg);
+          }
+          &-Right {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .InfoBox {
+      min-height: 6rem;
+      border-radius: 1rem;
+      border: solid 0.3rem black;
+      padding: 1rem;
+      background-color: rgb(29, 29, 29);
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-Full {
+        width: 100%;
+      }
+
+      &-Half {
+        width: 48%;
+      }
+    }
+  }
+}

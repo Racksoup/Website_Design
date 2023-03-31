@@ -3,8 +3,7 @@ import './Section3.scss';
 
 import { Icon } from '@iconify/react';
 import Blotch from '../../../images/Blotch.png';
-import BlotchName from '../../../images/BlotchName.png';
-import ProfileImage from '../../../images/ProfileImage.png';
+import BookProfile2 from '../../../images/BookProfile2.png';
 
 const Section3 = ({ linkToRef }) => {
   return (
@@ -15,8 +14,7 @@ const Section3 = ({ linkToRef }) => {
       <div className='Content'>
         <div className='Left'>
           <div className='LeftBox'>
-            <img src={BlotchName} alt='BlotchName' className='BlotchName' />
-            <img src={ProfileImage} alt='ProfileImage' className='ProfileImage' />
+            <img src={BookProfile2} alt='BookProfile' className='BookProfile' />
             {window.innerWidth >= 1500 ? (
               <div className='BlotchBox'>
                 <img src={Blotch} alt='Blotch' className='Blotch' />

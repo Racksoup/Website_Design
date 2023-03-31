@@ -8,7 +8,7 @@
   align-items: center;
   background-color: $secondary1;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1439px) {
     height: 62.2rem;
   }
 
@@ -17,13 +17,13 @@
   }
 
   .HomeBox {
-    width: 87.5rem;
+    width: 1439px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1439px) {
       width: 75rem;
     }
 
@@ -135,7 +135,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: 1500px) {
+      @media (max-width: 1439px) {
         margin-top: 0rem;
       }
 
@@ -159,7 +159,7 @@
         color: black;
         width: 80%;
         line-height: 6.7rem;
-        @media (max-width: 1500px) {
+        @media (max-width: 1439px) {
           font-size: 4.9rem;
         }
 
@@ -186,7 +186,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: 1500px) {
+      @media (max-width: 1439px) {
         width: 100%;
       }
 
@@ -209,10 +209,6 @@
 
         .ArrowBox {
           width: 7rem;
-
-          @media (max-width: 600px) {
-            margin-left: -6rem;
-          }
         }
 
         .Arrow {
@@ -224,7 +220,7 @@
           -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 
-          @media (max-width: 1500px) {
+          @media (max-width: 1439px) {
             width: 6rem;
             height: 6rem;
             margin-top: 1.3rem;
@@ -259,7 +255,7 @@
           box-shadow: 0.3rem 0.3rem 0 black;
           cursor: pointer;
 
-          @media (max-width: 1500px) {
+          @media (max-width: 1439px) {
             margin-left: 10rem;
           }
 
@@ -348,7 +344,7 @@
         flex-direction: column;
         justify-content: end;
 
-        @media (max-width: 1500px) {
+        @media (max-width: 1439px) {
           width: 45.5rem;
         }
 
@@ -370,7 +366,7 @@
           align-items: start;
           justify-content: space-between;
 
-          @media (max-width: 1500px) {
+          @media (max-width: 1439px) {
             padding: 0 1.4rem;
           }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.scss';
 import Section0 from './Section0';
+import Advice from './Advice';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
@@ -35,6 +36,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <Section0 linkToRef={linkToRef} />
+      <Advice />
       <Section1 linkToRef={linkToRef} />
       <Section2 />
       <Section3 linkToRef={linkToRef} />

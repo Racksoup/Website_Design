@@ -80,11 +80,12 @@
           }
         }
 
-        .ProfileImage {
+        .BookProfile {
           margin-top: 14.5rem;
           margin-left: 35.1rem;
           position: absolute;
           object-fit: contain;
+          width: 24rem;
 
           @media (max-width: 1800px) {
             margin-left: 26.5rem;
