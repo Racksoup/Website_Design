@@ -134,13 +134,14 @@
     }
 
     .Right {
-      width: 50%;
+      width: 38%;
       height: 100%;
       display: flex;
       justify-content: start;
 
       @media (max-width: 1200px) {
         height: 62rem;
+        width: 50%;
       }
 
       @media (max-width: 1150px) {
