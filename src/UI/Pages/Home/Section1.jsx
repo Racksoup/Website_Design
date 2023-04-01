@@ -17,7 +17,7 @@ const Section1 = ({ linkToRef }) => {
               <h4>Basic</h4>
             </div>
             <div className='CardContent'>
-              <h4>$200</h4>
+              <h4>$400</h4>
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
@@ -43,7 +43,7 @@ const Section1 = ({ linkToRef }) => {
               <h4>Full</h4>
             </div>
             <div className='CardContent'>
-              <h4>$300</h4>
+              <h4>$800</h4>
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
@@ -77,7 +77,7 @@ const Section1 = ({ linkToRef }) => {
               {window.innerWidth <= 1500 ? <h4>Full +</h4> : <h4>Full + maintenance</h4>}
             </div>
             <div className='CardContent'>
-              <h4>$300 +</h4>
+              <h4>$800 +</h4>
               <div className='TextBox'>
                 <div className='Line'>
                   <Icon icon='ion:checkmark-sharp' className='Icon' />
