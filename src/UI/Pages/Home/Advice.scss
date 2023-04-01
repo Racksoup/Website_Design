@@ -45,6 +45,10 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
       }
 
       &-L3 {
@@ -53,6 +57,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
       }
 
       &-L4 {
@@ -60,6 +68,12 @@
         display: flex;
         align-items: start;
         justify-content: space-between;
+      }
+
+      .MobileOptionHeader {
+        margin: 4rem 0 1rem 0;
+        font-size: 2rem;
+        color: black;
       }
 
       .ArrowBox {

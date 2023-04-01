@@ -80,7 +80,7 @@ const Section0 = ({ linkToRef }) => {
             )}
             <div className='TextBox'>
               <p className='Text'>
-                I build increadible website experiences! I deliver websites that are responsive,
+                I build incredible website experiences! I deliver websites that are responsive,
                 functional, and engaging! If you have a website or software idea we can discuss the
                 best way to create it!
               </p>

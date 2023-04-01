@@ -33,7 +33,7 @@ const Section1 = ({ linkToRef }) => {
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                Read More
+                Discuss Details
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Section1 = ({ linkToRef }) => {
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                Read More
+                Discuss Details
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Section1 = ({ linkToRef }) => {
                 </div>
               </div>
               <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                Read More
+                Discuss Details
               </p>
             </div>
           </div>

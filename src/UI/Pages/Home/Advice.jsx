@@ -16,18 +16,22 @@ const Advice = () => {
             Do you need a website that collects data or can be updated? user accounts, updatable
             menu, updatable schedule, ecommerce?
           </p>
-          <div className='ArrowBox'>
-            <img
-              className='StraightArrow StraightArrow-Left'
-              src={StraightArrow}
-              alt='Straight Arrow'
-            />
-            <img
-              className='StraightArrow StraightArrow-Right'
-              src={StraightArrow}
-              alt='Straight Arrow'
-            />
-          </div>
+          {window.innerWidth <= 600 ? (
+            <p className='MobileOptionHeader'>Option 1</p>
+          ) : (
+            <div className='ArrowBox'>
+              <img
+                className='StraightArrow StraightArrow-Left'
+                src={StraightArrow}
+                alt='Straight Arrow'
+              />
+              <img
+                className='StraightArrow StraightArrow-Right'
+                src={StraightArrow}
+                alt='Straight Arrow'
+              />
+            </div>
+          )}
           <div className='Info-L2'>
             <div className='Info-L3'>
               <div className='InfoBox InfoBox-Full'>
@@ -56,6 +60,7 @@ const Advice = () => {
                 </div>
               </div>
             </div>
+            {window.innerWidth <= 600 && <p className='MobileOptionHeader'>Option 2</p>}
             <div className='Info-L3'>
               <div className='InfoBox InfoBox-Full'>
                 My website displays content but does not need to change ofter after launch
