@@ -63,7 +63,7 @@ const Advice = () => {
             {window.innerWidth <= 600 && <p className='MobileOptionHeader'>Option 2</p>}
             <div className='Info-L3'>
               <div className='InfoBox InfoBox-Full'>
-                My website displays content but does not need to change ofter after launch
+                My website displays content but does not need to change after after launch
               </div>
               <div className='ArrowBox'>
                 <img
@@ -79,11 +79,12 @@ const Advice = () => {
               </div>
               <div className='Info-L4'>
                 <div className='InfoBox InfoBox-Half'>
-                  <h4>Basic + Maintenance</h4>I need some to manage and update my site in the future
+                  <h4>Basic + Maintenance</h4>I need someone to manage and update my site in the
+                  future
                 </div>
                 <div className='InfoBox InfoBox-Half'>
                   <h4>Basic</h4>I need a basic website built. after launch you will be given all
-                  keys and code. you will be sole owner of the website
+                  keys and code. you will be the sole owner of the website
                 </div>
               </div>
             </div>
