@@ -72,6 +72,7 @@
 
         .Img-Parent {
           position: absolute;
+          z-index: -1;
 
           @media (max-width: 1150px) {
             display: flex;
@@ -123,6 +124,10 @@
             @media (max-width: 450px) {
               font-size: 0.9rem;
             }
+          }
+
+          .Text {
+            z-index: 20;
           }
         }
       }
