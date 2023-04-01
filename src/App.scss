@@ -232,10 +232,10 @@ a {
     }
 
     .Desc {
-      margin-top: 1.8rem;
+      margin-top: 1.4rem;
       color: black;
-      height: 10.4rem;
-      font-size: 1.3rem;
+      height: 10.8rem;
+      font-size: 1rem;
       overflow: hidden;
     }
 
@@ -338,7 +338,7 @@ a {
         .Desc {
           margin-left: 0.5rem;
           color: black;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
 
           @media (max-width: 1500px) {
             margin-top: 0.2rem;
@@ -509,7 +509,7 @@ a {
 
 .TiltBtn {
   height: 4.4rem;
-  width: 11.9rem;
+  min-width: 11.5rem;
   border: solid 0.3rem black;
   background-color: $primary3;
   display: flex;
@@ -521,6 +521,7 @@ a {
   p {
     color: black;
     font-size: 2.7rem;
+    padding: 0 1rem;
   }
 
   &-1 {

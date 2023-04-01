@@ -128,38 +128,10 @@ const Section6 = () => {
           <img src={Cloud} alt='Blotch' />
           <h3>need to know more details?</h3>
           <h4>get in touch!</h4>
-
-          {window.innerWidth >= 750 && (
-            <div className='TextBox'>
-              <p className='Text'>
-                Have any questions about your project you aren't sure about? Give me a shout and we
-                can figure out the right package and website for your needs.
-              </p>
-              <p className='Text'>
-                The website packages I offer are designed to give you the website you need without
-                any unnessecary features.
-              </p>
-              {window.innerWidth >= 1500 && (
-                <p className='Text'>
-                  Not sure what style will work best for to connect with your customers? I can help
-                  you pick the best theme the represent your business.
-                </p>
-              )}
-            </div>
-          )}
-
-          {window.innerWidth >= 750 && (
-            <button className='TiltBtn'>
-              <p>Get started</p>
-            </button>
-          )}
-
-          {window.innerWidth < 750 && (
-            <div className='ContactInfo'>
-              <p>613-869-2343</p>
-              <p>Tranquilgorge@outlook.com</p>
-            </div>
-          )}
+          <div className='ContactInfo'>
+            <p>613-869-2343</p>
+            <p>Tranquilgorge@outlook.com</p>
+          </div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import StraightArrow from '../../../images/StraightArrow.png';
 
 const Advice = () => {
   return (
-    <div className='Advice'>
+    <div className='Advice' id='advice'>
       <div className='Content'>
         <div className='HeaderBox' style={{ width: '29rem' }}>
           <h2>TYPES OF WEBSITES</h2>
@@ -47,12 +47,12 @@ const Advice = () => {
               </div>
               <div className='Info-L4'>
                 <div className='InfoBox InfoBox-Half'>
-                  I need an ecommerce site that can be updated frequently, collects user data and
-                  handles transactions
+                  <h4>Ecommerce</h4>I need an ecommerce site that can be updated frequently,
+                  collects user data and handles transactions
                 </div>
                 <div className='InfoBox InfoBox-Half'>
-                  I need a website that doesn't handle transactions but can be updated frequently
-                  and can collect data
+                  <h4>Full</h4>I need a website that doesn't handle transactions but can be updated
+                  frequently and can collect data
                 </div>
               </div>
             </div>
@@ -74,11 +74,11 @@ const Advice = () => {
               </div>
               <div className='Info-L4'>
                 <div className='InfoBox InfoBox-Half'>
-                  I need some to manage and update my site in the future
+                  <h4>Basic + Maintenance</h4>I need some to manage and update my site in the future
                 </div>
                 <div className='InfoBox InfoBox-Half'>
-                  I need a basic website built. after launch you will be given all keys and code.
-                  you will be sole owner of the website
+                  <h4>Basic</h4>I need a basic website built. after launch you will be given all
+                  keys and code. you will be sole owner of the website
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@ const Home = () => {
     const linkOffset = 0;
     const refPosition = document.getElementById(ref).getBoundingClientRect().top;
     const offsetPosition = refPosition + window.pageYOffset - linkOffset;
-    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    window.scrollTo({ top: offsetPosition - 30, behavior: 'smooth' });
   };
 
   return (
@@ -41,12 +41,12 @@ const Home = () => {
       <Section2 />
       <Section3 linkToRef={linkToRef} />
       <Section4 />
-      <Section5 />
+      {/* <Section5 /> */}
       <Section6 />
       {/* {scrollPos > 500 && scrollPos < 4000 && (
          <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
        )} */}
-      {scrollPos > 1080 && window.innerWidth >= 750 && <Navbar linkToRef={linkToRef} />}
+      {scrollPos > 1049 && window.innerWidth >= 750 && <Navbar linkToRef={linkToRef} />}
       {window.innerWidth < 750 && <Navbar linkToRef={linkToRef} />}
     </div>
   );

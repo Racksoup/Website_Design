@@ -25,6 +25,9 @@ const Navbar = ({ linkToRef }) => {
             <p className='Item' onClick={() => linkToRef('section0')}>
               Home
             </p>
+            <p className='Item' onClick={() => linkToRef('advice')}>
+              Guide
+            </p>
             <p className='Item' onClick={() => linkToRef('section1')}>
               services
             </p>
@@ -33,9 +36,6 @@ const Navbar = ({ linkToRef }) => {
             </p>
             <p className='Item' onClick={() => linkToRef('section3')}>
               about
-            </p>
-            <p className='Item' onClick={() => linkToRef('section5')}>
-              blogs
             </p>
             <p className='Item' onClick={() => linkToRef('section6')}>
               contact
@@ -51,10 +51,10 @@ const Navbar = ({ linkToRef }) => {
               <div className='DropDown' onMouseLeave={() => showDrop(false)}>
                 {' '}
                 <p onClick={() => linkToRef('section0')}>Home</p>
+                <p onClick={() => linkToRef('advice')}>guide</p>
                 <p onClick={() => linkToRef('section1')}>services</p>
                 <p onClick={() => linkToRef('section2')}>portfolio</p>
                 <p onClick={() => linkToRef('section3')}>about</p>
-                <p onClick={() => linkToRef('section5')}>blogs</p>
                 <p onClick={() => linkToRef('section6')}>contact</p>
               </div>
             )}

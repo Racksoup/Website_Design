@@ -23,10 +23,10 @@ const Section0 = ({ linkToRef }) => {
           <div className='HeaderNav'>
             <p
               onClick={() => {
-                linkToRef('section0');
+                linkToRef('advice');
               }}
             >
-              home
+              guide
             </p>
             <p
               onClick={() => {
@@ -48,13 +48,6 @@ const Section0 = ({ linkToRef }) => {
               }}
             >
               about
-            </p>
-            <p
-              onClick={() => {
-                linkToRef('section5');
-              }}
-            >
-              blogs
             </p>
             <p
               onClick={() => {
@@ -109,16 +102,15 @@ const Section0 = ({ linkToRef }) => {
                 <div className='CardContent'>
                   <div className='TimeRow'>
                     <Icon icon='ic:baseline-access-time' className='Icon' />
-                    <p className='Text'>05/30/23</p>
+                    <p className='Text'>02/21/23</p>
                   </div>
-                  <h4>LOREM IPSUM</h4>
+                  <h4>Adam Chorney</h4>
                   <p className='Text Desc'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore.
+                    I was really impressed with the attention to detail that Connor showed
+                    throughout the development process. He took the time to really understand my
+                    brand and my goals for the website, and it shows in every aspect of the site.
                   </p>
-                  <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                    Read More
-                  </p>
+                  <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
                 </div>
               </div>
 
@@ -129,16 +121,15 @@ const Section0 = ({ linkToRef }) => {
                 <div className='CardContent'>
                   <div className='TimeRow'>
                     <Icon icon='ic:baseline-access-time' className='Icon' />
-                    <p className='Text'>05/30/23</p>
+                    <p className='Text'>03/10/23</p>
                   </div>
-                  <h4>LOREM IPSUM</h4>
+                  <h4>Brigette Clavell</h4>
                   <p className='Text Desc'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore.
+                    I just received my new website from my web developer and I have to say, I am
+                    absolutely thrilled with the results! From start to finish, the process was
+                    smooth and easy, and the end result exceeded all of my expectations.
                   </p>
-                  <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                    Read More
-                  </p>
+                  <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
                 </div>
               </div>
             </div>

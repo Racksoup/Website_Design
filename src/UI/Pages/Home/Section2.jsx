@@ -9,7 +9,7 @@ import PizzeriaItem from '../../../images/PizzeriaItem.png';
 const data = [
   {
     title: "Panda NFT's",
-    category: 'Ecommerce',
+    category: 'Websites',
     website: 'https://nft-website.onrender.com/',
     github: 'https://github.com/Racksoup/NTF_Site',
     description: 'NFT Exchange Website',
@@ -17,7 +17,7 @@ const data = [
   },
   {
     title: "Stefano's Family Pizzeria",
-    category: 'Resturant',
+    category: 'Websites',
     website: 'https://stefanos-family-pizzeria.onrender.com/',
     github: 'https://github.com/Racksoup/StefanosFamilyPizzeria',
     description: 'Pizzeria Business Website',
@@ -25,7 +25,7 @@ const data = [
   },
   {
     title: 'Fitness Store',
-    category: 'Ecommerce',
+    category: 'Websites',
     website: 'https://fitness-store.onrender.com/',
     github: 'https://github.com/Racksoup/FitnessStore',
     description: 'Fitness and Exercise Equipment Online-Store',
@@ -33,7 +33,7 @@ const data = [
   },
   {
     title: 'Pet Store',
-    category: 'Ecommerce',
+    category: 'Websites',
     website: 'https://pet-store.onrender.com/',
     github: 'https://github.com/Racksoup/PetStore',
     description: 'Pet Food, Toys, and Supplies',
@@ -72,60 +72,46 @@ const Section2 = () => {
               <p>All</p>
             </button>
           )}
-          {tab == 'Resturant' ? (
+          {tab == 'Websites' ? (
             <button className='TiltBtn TiltBtn-1 TiltBtn-Purple'>
-              <p>Resturant</p>
+              <p>Websites</p>
             </button>
           ) : (
             <button
               className='TiltBtn TiltBtn-1'
               onClick={() => {
-                setTab('Resturant');
+                setTab('Websites');
               }}
             >
-              <p>Resturant</p>
+              <p>Websites</p>
             </button>
           )}
-          {tab == 'Law' ? (
+          {tab == 'Addons' ? (
             <button className='TiltBtn TiltBtn-Purple'>
-              <p>Law</p>
+              <p>Addons</p>
             </button>
           ) : (
             <button
               className='TiltBtn'
               onClick={() => {
-                setTab('Law');
+                setTab('Addons');
               }}
             >
-              <p>Law</p>
+              <p>Addons</p>
             </button>
           )}
-          {tab == 'Ecommerce' ? (
+          {tab == 'AI Generated' ? (
             <button className='TiltBtn TiltBtn-1 TiltBtn-Purple'>
-              <p>Ecommerce</p>
+              <p>AI Generated</p>
             </button>
           ) : (
             <button
               className='TiltBtn TiltBtn-1'
               onClick={() => {
-                setTab('Ecommerce');
+                setTab('AI Generated');
               }}
             >
-              <p>Ecommerce</p>
-            </button>
-          )}
-          {tab == 'Beauty' ? (
-            <button className='TiltBtn TiltBtn-Purple'>
-              <p>Beauty</p>
-            </button>
-          ) : (
-            <button
-              className='TiltBtn'
-              onClick={() => {
-                setTab('Beauty');
-              }}
-            >
-              <p>Beauty</p>
+              <p>AI Generated</p>
             </button>
           )}
         </div>

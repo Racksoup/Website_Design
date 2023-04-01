@@ -4,6 +4,7 @@ import './Section3.scss';
 import { Icon } from '@iconify/react';
 import Blotch from '../../../images/Blotch.png';
 import BookProfile2 from '../../../images/BookProfile2.png';
+import Book2 from '../../../images/Book2.png';
 
 const Section3 = ({ linkToRef }) => {
   return (
@@ -13,52 +14,27 @@ const Section3 = ({ linkToRef }) => {
       </div>
       <div className='Content'>
         <div className='Left'>
-          <div className='LeftBox'>
-            <img src={BookProfile2} alt='BookProfile' className='BookProfile' />
-            {window.innerWidth >= 1500 ? (
-              <div className='BlotchBox'>
-                <img src={Blotch} alt='Blotch' className='Blotch' />
-                <div className='TextBox'>
-                  <p className='Text'>
-                    I am a Canadian Web-Developer, born in Gatineau and I've lived in Ottawa my
-                    whole life.
-                  </p>
-                  <p className='Text'>
-                    I have been developing websites and software for 3 years. I went to school for
-                    video game development in 2020.
-                  </p>
-                  <p className='Text'>
-                    My passions include history, politics, economics, gaming, dogs, cooking and,
-                    literature.
-                  </p>
-                </div>
+          <div className='Left-Content'>
+            <div className='Book'>
+              <div className='Img-Parent'>
+                <img src={Book2} alt='Book' />
               </div>
-            ) : (
-              <div className='BlotchBox-Medium'>
-                <div className='Content'>
-                  <div className='Item'>
-                    <p className='Text'>
-                      I am a Canadian Web-Developer, born in Gatineau and I've lived in Ottawa my
-                      whole life.
-                    </p>
-                  </div>
-                  <hr />
-                  <div className='Item'>
-                    <p className='Text'>
-                      I have been developing websites and software for 3 years. In 2020 I went to
-                      school for video game development.
-                    </p>
-                  </div>
-                  <hr />
-                  <div className='Item'>
-                    <p className='Text'>
-                      My passions include history, politics, economics, gaming, dogs, cooking and,
-                      literature.
-                    </p>
-                  </div>
-                </div>
+
+              <div className='TextBox'>
+                <p className='Text'>
+                  I am a Canadian Web-Developer, born in Gatineau and I've lived in Ottawa my whole
+                  life.
+                </p>
+                <p className='Text'>
+                  I have been developing websites and software for 3 years. I went to school for
+                  video game development in 2020.
+                </p>
+                <p className='Text'>
+                  My passions include history, politics, economics, gaming, dogs, cooking and,
+                  literature.
+                </p>
               </div>
-            )}
+            </div>
           </div>
         </div>
         <div className='Right'>
@@ -70,16 +46,15 @@ const Section3 = ({ linkToRef }) => {
               <div className='CardContent'>
                 <div className='TimeRow'>
                   <Icon icon='ic:baseline-access-time' className='Icon' />
-                  <p className='Text'>05/30/23</p>
+                  <p className='Text'>02/21/23</p>
                 </div>
-                <h4>LOREM IPSUM</h4>
+                <h4>Adam Chorney</h4>
                 <p className='Text Desc'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore.
+                  I was really impressed with the attention to detail that Connor showed throughout
+                  the development process. He took the time to really understand my brand and my
+                  goals for the website, and it shows in every aspect of the site.
                 </p>
-                <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                  Read More
-                </p>
+                <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
               </div>
             </div>
             <div className='Card'>
@@ -89,16 +64,15 @@ const Section3 = ({ linkToRef }) => {
               <div className='CardContent'>
                 <div className='TimeRow'>
                   <Icon icon='ic:baseline-access-time' className='Icon' />
-                  <p className='Text'>05/30/23</p>
+                  <p className='Text'>03/10/23</p>
                 </div>
-                <h4>LOREM IPSUM</h4>
+                <h4>Brigette Clavell</h4>
                 <p className='Text Desc'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore.
+                  I just received my new website from Connor and I have to say, I am absolutely
+                  thrilled with the results! From start to finish, the process was smooth and easy,
+                  and the end result exceeded all of my expectations.
                 </p>
-                <p className='Text Blue' onClick={() => linkToRef('section6')}>
-                  Read More
-                </p>
+                <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
               </div>
             </div>
           </div>
