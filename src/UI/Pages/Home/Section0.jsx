@@ -1,6 +1,6 @@
 import React from 'react';
 import './Section0.scss';
-
+import ScreenDev from '../../../images/ScreenDev.png';
 import Internet from '../../../images/Internet.png';
 import Arrow from '../../../images/Arrow.png';
 import { Icon } from '@iconify/react';
@@ -94,7 +94,7 @@ const Section0 = ({ linkToRef }) => {
             </div>
           </div>
           <div className='Rightx'>
-            <div className='Content'>
+            {/* <div className='Content'>
               <div className='Card'>
                 <div className='CardHeader'>
                   <p>Testimonial</p>
@@ -132,6 +132,9 @@ const Section0 = ({ linkToRef }) => {
                   <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
                 </div>
               </div>
+            </div> */}
+            <div className='Content'>
+              <img src={ScreenDev} alt='Screen Dev' />
             </div>
           </div>
         </div>

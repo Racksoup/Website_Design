@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import Blotch from '../../../images/Blotch.png';
 import BookProfile2 from '../../../images/BookProfile2.png';
 import Book2 from '../../../images/Book2.png';
+import ScreenDev from '../../../images/ScreenDev.png';
 
 const Section3 = ({ linkToRef }) => {
   return (
@@ -38,7 +39,7 @@ const Section3 = ({ linkToRef }) => {
           </div>
         </div>
         <div className='Right'>
-          <div className='RightBox'>
+          {/* <div className='RightBox'>
             <div className='Card'>
               <div className='CardHeader'>
                 <p>Testimonial</p>
@@ -75,6 +76,9 @@ const Section3 = ({ linkToRef }) => {
                 <p className='Text Blue' onClick={() => linkToRef('section6')}></p>
               </div>
             </div>
+          </div> */}
+          <div className='RightBox'>
+            <img src={ScreenDev} alt='Screen Dev' />
           </div>
         </div>
       </div>

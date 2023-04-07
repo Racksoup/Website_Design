@@ -12,6 +12,9 @@
   @media (max-width: 1200px) {
     height: 83rem;
   }
+  @media (max-width: 520px) {
+    height: 72.5rem;
+  }
 
   .HeaderBox {
     position: absolute;
@@ -162,6 +165,9 @@
         @media (max-width: 750px) {
           width: 32rem;
         }
+        @media (max-width: 520px) {
+          width: 21rem;
+        }
       }
 
       h3 {
@@ -178,6 +184,12 @@
           margin-top: 6.4rem;
           margin-right: 2rem;
         }
+
+        @media (max-width: 520px) {
+          font-size: 1.4rem;
+          margin-top: 3.9rem;
+          margin-right: 1.4rem;
+        }
       }
       h4 {
         position: absolute;
@@ -192,6 +204,12 @@
           font-size: 2rem;
           margin-top: 8.6rem;
           margin-right: 2rem;
+        }
+
+        @media (max-width: 520px) {
+          font-size: 1.4rem;
+          margin-top: 5.5rem;
+          margin-right: 1.4rem;
         }
       }
 
@@ -210,6 +228,12 @@
           margin-right: 2rem;
         }
 
+        @media (max-width: 520px) {
+          font-size: 1rem;
+          margin-top: 7.6rem;
+          margin-right: 1.4rem;
+        }
+
         p {
           color: black;
           font-size: 1.6rem;
@@ -218,6 +242,11 @@
           @media (max-width: 750px) {
             font-size: 1.2rem;
             margin-top: 0.4rem;
+          }
+
+          @media (max-width: 520px) {
+            font-size: 1rem;
+            line-height: 0.8rem;
           }
         }
       }

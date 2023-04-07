@@ -2,7 +2,7 @@
 
 .Section0 {
   width: 100vw;
-  height: 67.5rem;
+  min-height: 67.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +14,7 @@
 
   @media (max-width: 1200px) {
     height: auto;
+    min-height: 0;
   }
 
   .HomeBox {
@@ -357,6 +358,10 @@
           height: auto;
         }
 
+        @media (max-width: 550px) {
+          height: auto;
+        }
+
         .Content {
           padding-left: 3.6rem;
           width: 100%;
@@ -365,6 +370,10 @@
           display: flex;
           align-items: start;
           justify-content: space-between;
+
+          img {
+            width: 100%;
+          }
 
           @media (max-width: 1439px) {
             padding: 0 1.4rem;
@@ -375,16 +384,28 @@
             border-left: none;
             width: 85%;
             padding-top: 4rem;
+            // remove justify-content when changing from image to testimonials
+            justify-content: center;
+
+            img {
+              max-width: 40rem;
+            }
           }
 
           @media (max-width: 750px) {
             flex-direction: column;
-            height: 55rem;
+            // change height to 55rem when changing from image to testimonials
+            height: auto;
+            max-height: 35rem;
             align-items: center;
             padding-top: 0rem;
             justify-content: space-evenly;
             .Card {
               margin-top: 2rem;
+            }
+
+            img {
+              margin: 2.6rem 0;
             }
           }
         }
