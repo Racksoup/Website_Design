@@ -5,6 +5,9 @@ import PandaNFTsItem from '../../../images/PandaNFTsItem.png';
 import FitnessStoreItem from '../../../images/FitnessStoreItem.png';
 import PetStoreItem from '../../../images/PetStoreItem.png';
 import PizzeriaItem from '../../../images/PizzeriaItem.png';
+import FinancialPlanner from '../../../images/WebsiteItem-FinancialPlanner.png';
+import GameRoom from '../../../images/WebsiteItem-GameRoom.png';
+import XPChart from '../../../images/WebsiteItem-XPChart.png';
 
 const data = [
   {
@@ -38,6 +41,30 @@ const data = [
     github: 'https://github.com/Racksoup/PetStore',
     description: 'Pet Food, Toys, and Supplies',
     image: PetStoreItem,
+  },
+  {
+    title: 'Financial Advisor',
+    category: 'Websites',
+    website: 'https://financial-planner.onrender.com/',
+    github: 'https://github.com/Racksoup/Financial_Planner',
+    description: 'Advisor Profile',
+    image: FinancialPlanner,
+  },
+  {
+    title: 'Game Room',
+    category: 'Addons',
+    website: 'https://www.curseforge.com/wow/addons/game-room',
+    github: 'https://github.com/Racksoup/ZUI_GameRoom',
+    description: 'World of Warcraft Arcade Games Suite',
+    image: GameRoom,
+  },
+  {
+    title: 'XP Chart',
+    category: 'Addons',
+    website: 'https://www.curseforge.com/wow/addons/xp-chart',
+    github: 'https://github.com/Racksoup/ZUI_XPChart',
+    description: 'World of Warcraft Experience Points Tracker',
+    image: XPChart,
   },
 ];
 
